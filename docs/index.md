@@ -1,7 +1,12 @@
-[![Built with Grunt][grunt-img]](http://gruntjs.com/) [![MIT License][license-img]][license-url]
-
+links:
+  - url: "/hello"
+    body: "Hello"
+  - url: "/world"
+    body: "World!"
+---
 # sosocket
-
+[![Built with Grunt][grunt-img]](http://gruntjs.com/) [![MIT License][license-img]][license-url]
+ 
 > Live Stream
 
 

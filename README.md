@@ -5,10 +5,17 @@
 * Project generated with Yeoman generator-gruntproject v0.1.16
 
 ## Install
+```bash
+npm install -g markdown-styles
+```
 
 ## Usage
+```bash
+generate-md --layout ./bin/markdown --input ./docs --output ./public/docs
+```
 
-## Issues
+## Documentation
+> https://github.com/mixu/markdown-styles
 
 [grunt-img]: https://cdn.gruntjs.com/builtwith.png
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square

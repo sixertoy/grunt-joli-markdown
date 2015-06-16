@@ -7,7 +7,7 @@ module.exports = {
         livereloadOnError: false
     },
     styles: {
-        files: ['./src/**/*.less'],
+        files: ['./src/**/*.less', './docs/**/*.md'],
         tasks: ['less', 'autoprefixer', 'exec:documentation']
     }
 };
