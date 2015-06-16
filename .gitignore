@@ -201,3 +201,7 @@ bower_components/
 
 build/
 dist/
+
+
+!/bin/git
+!/bin/markdown
