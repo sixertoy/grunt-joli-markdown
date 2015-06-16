@@ -8,6 +8,6 @@ module.exports = {
     },
     styles: {
         files: ['./src/**/*.less'],
-        tasks: ['less', 'autoprefixer']
+        tasks: ['less', 'autoprefixer', 'exec:documentation']
     }
 };
