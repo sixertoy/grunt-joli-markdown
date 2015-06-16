@@ -1,0 +1,6 @@
+compile:
+  - less
+  - autoprefixer
+default:
+  - compile
+  - watch
