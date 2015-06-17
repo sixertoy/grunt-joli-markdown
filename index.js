@@ -4,4 +4,6 @@
 
     'use strict';
 
+    module.export = require('tasks/markdown');
+
 }());

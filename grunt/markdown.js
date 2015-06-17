@@ -3,11 +3,11 @@
 module.exports = {
     all: {
         files: [{
+            ext: '.html',
             expand: true,
-            src: './docs/src/*.md',
-            dest: './docs/html/',
             flatten: true,
-            ext: '.html'
+            dest: './docs/html/',
+            src: './docs/src/*.md'
         }],
         options: {
             template: './docs/page.tpl'
