@@ -150,6 +150,10 @@ header {
 .size-25 {
   width: 25%;
 }
+#sidebar ul,
+#sidebar li {
+  list-style-type: none;
+}
 /*
 
 
