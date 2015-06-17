@@ -32,27 +32,30 @@
             }
         };
 
+    /**
+     *
+     *
+     *
+     */
     module.exports = function (grunt) {
         grunt.registerTask('joli_markdown', 'The best Grunt plugin ever.', function () {
             //
             // variables
-            var spOptions,
-                isValidPages,
-                isValidInput,
-                isValidOuput,
-                isValidLayout,
+            var spOptions, options, defaultLayout,
+                isValidPages, isValidInput, isValidOuput, isValidLayout,
                 done = this.async(),
-                options = this.options({
-                    pages: [],
-                    input: null,
-                    output: null,
-                    cwd: process.cwd(),
-                    layout: 'layout/joli-markdown'
-                }),
+                base = path.dirname(module.filename),
                 stdiomode = grunt.option('debug') ? 'inherit' : 'ignore';
-
-            console.log();
-
+            //
+            // construction du fichier de template par default
+            defaultLayout = path.join(base, '../', 'layout/joli-markdown');
+            options = this.options({
+                pages: [],
+                input: null,
+                output: null,
+                cwd: process.cwd(),
+                layout: defaultLayout
+            });
             //
             // validation des options
             isValidPages = utils.validArray(grunt, options.pages);
