@@ -10,7 +10,7 @@ npm install grunt-joli-markdown
 ```
 
 ## Usage
-```json
+```js
 grunt.config.init({
     joli_markdown:{
         options: {
