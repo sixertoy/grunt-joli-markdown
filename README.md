@@ -1,6 +1,6 @@
 # readme-styles [![Built with Grunt][grunt-img]](http://gruntjs.com/)
 
-[![MIT License][license-img]][license-url] [![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-url] [![Build Status][travis-img]][travis-url] [![Coverage Status][coverall-img]][coverall-url]
+[![MIT License][license-img]][license-url] [![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-url]
 
 * Markdown documentation generator based on mixu/markdown-styles
 
@@ -10,7 +10,15 @@ npm install grunt-joli-markdown
 ```
 
 ## Usage
-```bash
+```json
+grunt.config.init({
+    joli_markdown:{
+        options: {
+            input: './docs',
+            output: './public/docs'
+        }
+    }
+};
 ```
 
 [grunt-img]: https://cdn.gruntjs.com/builtwith.png
@@ -20,8 +28,8 @@ npm install grunt-joli-markdown
 [coverall-url]: https://coveralls.io/r/sixertoy/grunt-joli-markdown
 [coverall-img]: https://img.shields.io/coveralls/sixertoy/grunt-joli-markdown.svg?style=flat-square
 
-[travis-url]: https://travis-ci.org/sixertoy/readme-styles
-[travis-img]: http://img.shields.io/travis/sixertoy/readme-styles.svg?style=flat-square
+[travis-url]: https://travis-ci.org/sixertoy/grunt-joli-markdown
+[travis-img]: http://img.shields.io/travis/sixertoy/grunt-joli-markdown.svg?style=flat-square
 
 [npm-url]: https://npmjs.org/package/grunt-joli-markdown
 [npm-version-img]: http://img.shields.io/npm/v/grunt-joli-markdown.svg?style=flat-square
