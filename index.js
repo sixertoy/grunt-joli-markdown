@@ -4,6 +4,6 @@
 
     'use strict';
 
-    module.export = require('tasks/markdown');
+    module.exports = require('tasks/joli_markdown');
 
 }());
