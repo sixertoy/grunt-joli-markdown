@@ -1,4 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Andika);
+@import url(//fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Cantarell:400,700,400italic);
 /** -----------------------------------------------------
  *
  * Functions
@@ -33,6 +36,854 @@
   width: auto;
   display: block;
 }
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+table,
+th,
+td,
+embed,
+object,
+hr {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+img,
+abbr,
+fieldset {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.0em;
+}
+q:before,
+q:after {
+  content: '';
+}
+a,
+ins {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'octicons';
+  src: url('./octicons//octicons.eot?#iefix&v=932555081d58ad24701c658c97328237bbc156d2') format('embedded-opentype'), url('./octicons//octicons.woff?v=932555081d58ad24701c658c97328237bbc156d2') format('woff'), url('./octicons//octicons.ttf?v=932555081d58ad24701c658c97328237bbc156d2') format('truetype'), url('./octicons//octicons.svg?v=932555081d58ad24701c658c97328237bbc156d2#octicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.octicon,
+.mega-octicon {
+  font: normal normal normal 16px/1 octicons;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mega-octicon {
+  font-size: 32px;
+}
+.octicon-alert:before {
+  content: '\f02d';
+}
+/*  */
+.octicon-alignment-align:before {
+  content: '\f08a';
+}
+/*  */
+.octicon-alignment-aligned-to:before {
+  content: '\f08e';
+}
+/*  */
+.octicon-alignment-unalign:before {
+  content: '\f08b';
+}
+/*  */
+.octicon-arrow-down:before {
+  content: '\f03f';
+}
+/*  */
+.octicon-arrow-left:before {
+  content: '\f040';
+}
+/*  */
+.octicon-arrow-right:before {
+  content: '\f03e';
+}
+/*  */
+.octicon-arrow-small-down:before {
+  content: '\f0a0';
+}
+/*  */
+.octicon-arrow-small-left:before {
+  content: '\f0a1';
+}
+/*  */
+.octicon-arrow-small-right:before {
+  content: '\f071';
+}
+/*  */
+.octicon-arrow-small-up:before {
+  content: '\f09f';
+}
+/*  */
+.octicon-arrow-up:before {
+  content: '\f03d';
+}
+/*  */
+.octicon-beer:before {
+  content: '\f069';
+}
+/*  */
+.octicon-book:before {
+  content: '\f007';
+}
+/*  */
+.octicon-bookmark:before {
+  content: '\f07b';
+}
+/*  */
+.octicon-briefcase:before {
+  content: '\f0d3';
+}
+/*  */
+.octicon-broadcast:before {
+  content: '\f048';
+}
+/*  */
+.octicon-browser:before {
+  content: '\f0c5';
+}
+/*  */
+.octicon-bug:before {
+  content: '\f091';
+}
+/*  */
+.octicon-calendar:before {
+  content: '\f068';
+}
+/*  */
+.octicon-check:before {
+  content: '\f03a';
+}
+/*  */
+.octicon-checklist:before {
+  content: '\f076';
+}
+/*  */
+.octicon-chevron-down:before {
+  content: '\f0a3';
+}
+/*  */
+.octicon-chevron-left:before {
+  content: '\f0a4';
+}
+/*  */
+.octicon-chevron-right:before {
+  content: '\f078';
+}
+/*  */
+.octicon-chevron-up:before {
+  content: '\f0a2';
+}
+/*  */
+.octicon-circle-slash:before {
+  content: '\f084';
+}
+/*  */
+.octicon-circuit-board:before {
+  content: '\f0d6';
+}
+/*  */
+.octicon-clippy:before {
+  content: '\f035';
+}
+/*  */
+.octicon-clock:before {
+  content: '\f046';
+}
+/*  */
+.octicon-cloud-download:before {
+  content: '\f00b';
+}
+/*  */
+.octicon-cloud-upload:before {
+  content: '\f00c';
+}
+/*  */
+.octicon-code:before {
+  content: '\f05f';
+}
+/*  */
+.octicon-color-mode:before {
+  content: '\f065';
+}
+/*  */
+.octicon-comment-add:before,
+.octicon-comment:before {
+  content: '\f02b';
+}
+/*  */
+.octicon-comment-discussion:before {
+  content: '\f04f';
+}
+/*  */
+.octicon-credit-card:before {
+  content: '\f045';
+}
+/*  */
+.octicon-dash:before {
+  content: '\f0ca';
+}
+/*  */
+.octicon-dashboard:before {
+  content: '\f07d';
+}
+/*  */
+.octicon-database:before {
+  content: '\f096';
+}
+/*  */
+.octicon-device-camera:before {
+  content: '\f056';
+}
+/*  */
+.octicon-device-camera-video:before {
+  content: '\f057';
+}
+/*  */
+.octicon-device-desktop:before {
+  content: '\f27c';
+}
+/*  */
+.octicon-device-mobile:before {
+  content: '\f038';
+}
+/*  */
+.octicon-diff:before {
+  content: '\f04d';
+}
+/*  */
+.octicon-diff-added:before {
+  content: '\f06b';
+}
+/*  */
+.octicon-diff-ignored:before {
+  content: '\f099';
+}
+/*  */
+.octicon-diff-modified:before {
+  content: '\f06d';
+}
+/*  */
+.octicon-diff-removed:before {
+  content: '\f06c';
+}
+/*  */
+.octicon-diff-renamed:before {
+  content: '\f06e';
+}
+/*  */
+.octicon-ellipsis:before {
+  content: '\f09a';
+}
+/*  */
+.octicon-eye-unwatch:before,
+.octicon-eye-watch:before,
+.octicon-eye:before {
+  content: '\f04e';
+}
+/*  */
+.octicon-file-binary:before {
+  content: '\f094';
+}
+/*  */
+.octicon-file-code:before {
+  content: '\f010';
+}
+/*  */
+.octicon-file-directory:before {
+  content: '\f016';
+}
+/*  */
+.octicon-file-media:before {
+  content: '\f012';
+}
+/*  */
+.octicon-file-pdf:before {
+  content: '\f014';
+}
+/*  */
+.octicon-file-submodule:before {
+  content: '\f017';
+}
+/*  */
+.octicon-file-symlink-directory:before {
+  content: '\f0b1';
+}
+/*  */
+.octicon-file-symlink-file:before {
+  content: '\f0b0';
+}
+/*  */
+.octicon-file-text:before {
+  content: '\f011';
+}
+/*  */
+.octicon-file-zip:before {
+  content: '\f013';
+}
+/*  */
+.octicon-flame:before {
+  content: '\f0d2';
+}
+/*  */
+.octicon-fold:before {
+  content: '\f0cc';
+}
+/*  */
+.octicon-gear:before {
+  content: '\f02f';
+}
+/*  */
+.octicon-gift:before {
+  content: '\f042';
+}
+/*  */
+.octicon-gist:before {
+  content: '\f00e';
+}
+/*  */
+.octicon-gist-secret:before {
+  content: '\f08c';
+}
+/*  */
+.octicon-git-branch-create:before,
+.octicon-git-branch-delete:before,
+.octicon-git-branch:before {
+  content: '\f020';
+}
+/*  */
+.octicon-git-commit:before {
+  content: '\f01f';
+}
+/*  */
+.octicon-git-compare:before {
+  content: '\f0ac';
+}
+/*  */
+.octicon-git-merge:before {
+  content: '\f023';
+}
+/*  */
+.octicon-git-pull-request-abandoned:before,
+.octicon-git-pull-request:before {
+  content: '\f009';
+}
+/*  */
+.octicon-globe:before {
+  content: '\f0b6';
+}
+/*  */
+.octicon-graph:before {
+  content: '\f043';
+}
+/*  */
+.octicon-heart:before {
+  content: '\2665';
+}
+/* ♥ */
+.octicon-history:before {
+  content: '\f07e';
+}
+/*  */
+.octicon-home:before {
+  content: '\f08d';
+}
+/*  */
+.octicon-horizontal-rule:before {
+  content: '\f070';
+}
+/*  */
+.octicon-hourglass:before {
+  content: '\f09e';
+}
+/*  */
+.octicon-hubot:before {
+  content: '\f09d';
+}
+/*  */
+.octicon-inbox:before {
+  content: '\f0cf';
+}
+/*  */
+.octicon-info:before {
+  content: '\f059';
+}
+/*  */
+.octicon-issue-closed:before {
+  content: '\f028';
+}
+/*  */
+.octicon-issue-opened:before {
+  content: '\f026';
+}
+/*  */
+.octicon-issue-reopened:before {
+  content: '\f027';
+}
+/*  */
+.octicon-jersey:before {
+  content: '\f019';
+}
+/*  */
+.octicon-jump-down:before {
+  content: '\f072';
+}
+/*  */
+.octicon-jump-left:before {
+  content: '\f0a5';
+}
+/*  */
+.octicon-jump-right:before {
+  content: '\f0a6';
+}
+/*  */
+.octicon-jump-up:before {
+  content: '\f073';
+}
+/*  */
+.octicon-key:before {
+  content: '\f049';
+}
+/*  */
+.octicon-keyboard:before {
+  content: '\f00d';
+}
+/*  */
+.octicon-law:before {
+  content: '\f0d8';
+}
+/*  */
+.octicon-light-bulb:before {
+  content: '\f000';
+}
+/*  */
+.octicon-link:before {
+  content: '\f05c';
+}
+/*  */
+.octicon-link-external:before {
+  content: '\f07f';
+}
+/*  */
+.octicon-list-ordered:before {
+  content: '\f062';
+}
+/*  */
+.octicon-list-unordered:before {
+  content: '\f061';
+}
+/*  */
+.octicon-location:before {
+  content: '\f060';
+}
+/*  */
+.octicon-gist-private:before,
+.octicon-mirror-private:before,
+.octicon-git-fork-private:before,
+.octicon-lock:before {
+  content: '\f06a';
+}
+/*  */
+.octicon-logo-github:before {
+  content: '\f092';
+}
+/*  */
+.octicon-mail:before {
+  content: '\f03b';
+}
+/*  */
+.octicon-mail-read:before {
+  content: '\f03c';
+}
+/*  */
+.octicon-mail-reply:before {
+  content: '\f051';
+}
+/*  */
+.octicon-mark-github:before {
+  content: '\f00a';
+}
+/*  */
+.octicon-markdown:before {
+  content: '\f0c9';
+}
+/*  */
+.octicon-megaphone:before {
+  content: '\f077';
+}
+/*  */
+.octicon-mention:before {
+  content: '\f0be';
+}
+/*  */
+.octicon-microscope:before {
+  content: '\f089';
+}
+/*  */
+.octicon-milestone:before {
+  content: '\f075';
+}
+/*  */
+.octicon-mirror-public:before,
+.octicon-mirror:before {
+  content: '\f024';
+}
+/*  */
+.octicon-mortar-board:before {
+  content: '\f0d7';
+}
+/*  */
+.octicon-move-down:before {
+  content: '\f0a8';
+}
+/*  */
+.octicon-move-left:before {
+  content: '\f074';
+}
+/*  */
+.octicon-move-right:before {
+  content: '\f0a9';
+}
+/*  */
+.octicon-move-up:before {
+  content: '\f0a7';
+}
+/*  */
+.octicon-mute:before {
+  content: '\f080';
+}
+/*  */
+.octicon-no-newline:before {
+  content: '\f09c';
+}
+/*  */
+.octicon-octoface:before {
+  content: '\f008';
+}
+/*  */
+.octicon-organization:before {
+  content: '\f037';
+}
+/*  */
+.octicon-package:before {
+  content: '\f0c4';
+}
+/*  */
+.octicon-paintcan:before {
+  content: '\f0d1';
+}
+/*  */
+.octicon-pencil:before {
+  content: '\f058';
+}
+/*  */
+.octicon-person-add:before,
+.octicon-person-follow:before,
+.octicon-person:before {
+  content: '\f018';
+}
+/*  */
+.octicon-pin:before {
+  content: '\f041';
+}
+/*  */
+.octicon-playback-fast-forward:before {
+  content: '\f0bd';
+}
+/*  */
+.octicon-playback-pause:before {
+  content: '\f0bb';
+}
+/*  */
+.octicon-playback-play:before {
+  content: '\f0bf';
+}
+/*  */
+.octicon-playback-rewind:before {
+  content: '\f0bc';
+}
+/*  */
+.octicon-plug:before {
+  content: '\f0d4';
+}
+/*  */
+.octicon-repo-create:before,
+.octicon-gist-new:before,
+.octicon-file-directory-create:before,
+.octicon-file-add:before,
+.octicon-plus:before {
+  content: '\f05d';
+}
+/*  */
+.octicon-podium:before {
+  content: '\f0af';
+}
+/*  */
+.octicon-primitive-dot:before {
+  content: '\f052';
+}
+/*  */
+.octicon-primitive-square:before {
+  content: '\f053';
+}
+/*  */
+.octicon-pulse:before {
+  content: '\f085';
+}
+/*  */
+.octicon-puzzle:before {
+  content: '\f0c0';
+}
+/*  */
+.octicon-question:before {
+  content: '\f02c';
+}
+/*  */
+.octicon-quote:before {
+  content: '\f063';
+}
+/*  */
+.octicon-radio-tower:before {
+  content: '\f030';
+}
+/*  */
+.octicon-repo-delete:before,
+.octicon-repo:before {
+  content: '\f001';
+}
+/*  */
+.octicon-repo-clone:before {
+  content: '\f04c';
+}
+/*  */
+.octicon-repo-force-push:before {
+  content: '\f04a';
+}
+/*  */
+.octicon-gist-fork:before,
+.octicon-repo-forked:before {
+  content: '\f002';
+}
+/*  */
+.octicon-repo-pull:before {
+  content: '\f006';
+}
+/*  */
+.octicon-repo-push:before {
+  content: '\f005';
+}
+/*  */
+.octicon-rocket:before {
+  content: '\f033';
+}
+/*  */
+.octicon-rss:before {
+  content: '\f034';
+}
+/*  */
+.octicon-ruby:before {
+  content: '\f047';
+}
+/*  */
+.octicon-screen-full:before {
+  content: '\f066';
+}
+/*  */
+.octicon-screen-normal:before {
+  content: '\f067';
+}
+/*  */
+.octicon-search-save:before,
+.octicon-search:before {
+  content: '\f02e';
+}
+/*  */
+.octicon-server:before {
+  content: '\f097';
+}
+/*  */
+.octicon-settings:before {
+  content: '\f07c';
+}
+/*  */
+.octicon-log-in:before,
+.octicon-sign-in:before {
+  content: '\f036';
+}
+/*  */
+.octicon-log-out:before,
+.octicon-sign-out:before {
+  content: '\f032';
+}
+/*  */
+.octicon-split:before {
+  content: '\f0c6';
+}
+/*  */
+.octicon-squirrel:before {
+  content: '\f0b2';
+}
+/*  */
+.octicon-star-add:before,
+.octicon-star-delete:before,
+.octicon-star:before {
+  content: '\f02a';
+}
+/*  */
+.octicon-steps:before {
+  content: '\f0c7';
+}
+/*  */
+.octicon-stop:before {
+  content: '\f08f';
+}
+/*  */
+.octicon-repo-sync:before,
+.octicon-sync:before {
+  content: '\f087';
+}
+/*  */
+.octicon-tag-remove:before,
+.octicon-tag-add:before,
+.octicon-tag:before {
+  content: '\f015';
+}
+/*  */
+.octicon-telescope:before {
+  content: '\f088';
+}
+/*  */
+.octicon-terminal:before {
+  content: '\f0c8';
+}
+/*  */
+.octicon-three-bars:before {
+  content: '\f05e';
+}
+/*  */
+.octicon-thumbsdown:before {
+  content: '\f0db';
+}
+/*  */
+.octicon-thumbsup:before {
+  content: '\f0da';
+}
+/*  */
+.octicon-tools:before {
+  content: '\f031';
+}
+/*  */
+.octicon-trashcan:before {
+  content: '\f0d0';
+}
+/*  */
+.octicon-triangle-down:before {
+  content: '\f05b';
+}
+/*  */
+.octicon-triangle-left:before {
+  content: '\f044';
+}
+/*  */
+.octicon-triangle-right:before {
+  content: '\f05a';
+}
+/*  */
+.octicon-triangle-up:before {
+  content: '\f0aa';
+}
+/*  */
+.octicon-unfold:before {
+  content: '\f039';
+}
+/*  */
+.octicon-unmute:before {
+  content: '\f0ba';
+}
+/*  */
+.octicon-versions:before {
+  content: '\f064';
+}
+/*  */
+.octicon-remove-close:before,
+.octicon-x:before {
+  content: '\f081';
+}
+/*  */
+.octicon-zap:before {
+  content: '\26A1';
+}
+/* ⚡ */
+/* --------------------------------------------------------------------
+
+ Variables
+
+*/
 /* --------------------------------------------------------------------
 
  HTML
@@ -40,36 +891,54 @@
 */
 body {
   color: #333;
-  padding: 50px;
   font-size: 17px;
-  font-family: 'PT Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
+  line-height: 1.1em;
+  font-family: 'Droid Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
 }
+img {
+  max-width: 100%;
+}
+/* titles */
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #222;
-  margin: 0 0 20px;
-}
-h1,
-h2,
-h3 {
-  line-height: 1.1;
-}
-h1 {
-  font-size: 28px;
-}
-h2 {
-  color: #393939;
-}
 h3,
 h4,
 h5,
 h6 {
   color: #494949;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  line-height: 1.1em;
+  font-weight: normal;
+  font-family: 'PT Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
 }
+h1 {
+  color: #222;
+  font-size: 2.5em;
+}
+h2 {
+  color: #393939;
+  font-size: 2em;
+  line-height: 1.4em;
+  border-bottom: 1px solid #ededed;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+}
+h5,
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+h1,
+h2 {
+  margin-bottom: 0.75em;
+}
+/* links */
 a {
   color: #39c;
   font-weight: 400;
@@ -81,13 +950,59 @@ a small {
   font-size: 11px;
   margin-top: -0.6em;
 }
+/* splitter */
+hr {
+  border: 0;
+  height: 1px;
+  margin: 0 0 20px;
+  color: #ededed;
+  background-color: #ededed;
+}
+/* splitter */
 p,
 ul,
 ol,
 table,
 pre,
-dl {
+dl,
+blockquote,
+q {
   margin: 0 0 20px;
+}
+/* --------------------------------------------------------------------
+
+ Post
+
+*/
+.post tt,
+.post pre,
+.post code {
+  line-height: 1.5em;
+  font-family: 'Droid Sans', 'lucida console', monospace;
+}
+.post pre {
+  color: #696969;
+  padding: 1.2em;
+  font-size: 0.8em;
+  overflow-x: auto;
+  vertical-align: top;
+  border-style: solid;
+  border-color: #ededed;
+  border-width: 1px 1px 1px 6px;
+}
+.post pre ul,
+.post pre ol {
+  margin: 0;
+  padding: 0;
+}
+.post ul {
+  list-style-type: disc;
+}
+.post ul,
+.post ol {
+  line-height: 1.4em;
+  padding-left: 3.333em;
+  margin: 0 1.5em 1.5em 0;
 }
 blockquote {
   margin: 0;
@@ -95,235 +1010,222 @@ blockquote {
   padding: 0 0 0 20px;
   border-left: 1px solid #e5e5e5;
 }
-code,
-pre {
-  color: #333;
-  font-size: 12px;
+/*
+
+.post p {
+  margin: 0 0 1.5em;
+  max-width: 580px;
 }
-pre {
-  overflow-x: auto;
-  padding: 8px 15px;
-  border-radius: 5px;
-  background: #f8f8f8;
-  border: 1px solid #e5e5e5;
+
+.post ul, .post ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 3.333em;
 }
+
+.post pre, .post table {
+  margin: -1em 0 1em 0;
+  padding: .5em 1em;
+  background: #F6F6F6 repeat 0 0;
+}
+
+.post p tt, .post p code {
+  background: ghostWhite;
+  border: 1px solid #DEDEDE;
+  padding: 0 0.2em;
+}
+
+*/
 table {
   width: 100%;
   border-collapse: collapse;
 }
-th,
-td {
+table th {
+  color: #444;
+}
+table th,
+table td {
   text-align: left;
   padding: 5px 10px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #ededed;
 }
+/*
+
+code,
+pre {
+    font-size: 12px;
+}
+
+table {
+}
+
+
+
 dt {
-  color: #444;
-  font-weight: 700;
+    color: #444;
+    font-weight: 700;
 }
-th {
-  color: #444;
+
+
+
+strong {
+    color: #222;
+    font-weight: 700;
 }
-img {
-  max-width: 100%;
+
+section {
+    width: 500px;
+    float: right;
+    padding-bottom: 50px;
 }
+
+small {
+    font-size: 11px;
+}
+
 header {
-  width: 270px;
-  float: left;
-  position: fixed;
+    width: 270px;
+    float: left;
+    position: fixed;
+    ul {
+        padding: 0;
+        height: 40px;
+        width: 270px;
+        list-style: none;
+        background: #eee;
+        border-radius: 5px;
+        border: 1px solid #d2d2d2;
+        background: linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
+        box-shadow: inset #fff 0 1px 0, inset rgba(0, 0, 0, 0.03) 0 -1px 0;
+        li {
+            width: 89px;
+            float: left;
+            height: 40px;
+            border-right: 1px solid #d2d2d2;
+            a {
+                color: #999;
+                height: 40px;
+                line-height: 1;
+                display: block;
+                font-size: 11px;
+                padding-top: 6px;
+                text-align: center;
+                strong {
+                    color: #222;
+                    display: block;
+                    font-size: 14px;
+                }
+            }
+            & + li {
+                width: 88px;
+                border-left: 1px solid #fff;
+            }
+        }
+    }
 }
+*/
 /* --------------------------------------------------------------------
 
  Classes
 
 */
-.wrapper {
-  width: 860px;
-  margin: 0 auto;
-}
 .size-100 {
   width: 100%;
 }
 .size-70 {
-  width: 70%;
+  width: 65%;
 }
 .size-25 {
   width: 25%;
 }
-#sidebar ul,
-#sidebar li {
-  list-style-type: none;
+/* --------------------------------------------------------------------
+
+ Gabarits
+
+*/
+#wrapper {
+  padding: 0;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: #FFF;
 }
+/* --------------------------------------------------------------------
+
+ Media Queries
+
+*/
 /*
-
-
-
-
-
-
-
-header ul {
-  list-style:none;
-  height:40px;
-
-  padding:0;
-
-  background: #eee;
-  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-
-  border-radius:5px;
-  border:1px solid #d2d2d2;
-  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
-  width:270px;
+@media print,
+screen and (max-width: 960px) {
+    div.wrapper {
+        margin: 0;
+        width: auto;
+    }
+    header,
+    section,
+    footer {
+        float: none;
+        width: auto;
+        position: static;
+    }
+    header {
+        padding-right: 320px;
+    }
+    section {
+        padding: 20px 0;
+        margin: 0 0 20px;
+        border-width: 1px 0;
+        border: 1px solid #e5e5e5;
+    }
+    header {
+        a small {
+            display: inline;
+        }
+        ul {
+            top: 52px;
+            right: 50px;
+            position: absolute;
+        }
+    }
 }
 
-header li {
-  width:89px;
-  float:left;
-  border-right:1px solid #d2d2d2;
-  height:40px;
+@media print,
+screen and (max-width: 720px) {
+    body {
+        word-wrap: break-word;
+    }
+    header {
+        padding: 0;
+    }
+    header ul,
+    header p.view {
+        position: static;
+    }
+    pre,
+    code {
+        word-wrap: normal;
+    }
 }
 
-header ul a {
-  line-height:1;
-  font-size:11px;
-  color:#999;
-  display:block;
-  text-align:center;
-  padding-top:6px;
-  height:40px;
-}
-
-strong {
-  color:#222;
-  font-weight:700;
-}
-
-header ul li + li {
-  width:88px;
-  border-left:1px solid #fff;
-}
-
-header ul li + li + li {
-  border-right:none;
-  width:89px;
-}
-
-header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
-}
-
-section {
-  width:500px;
-  float:right;
-  padding-bottom:50px;
-}
-
-small {
-  font-size:11px;
-}
-
-hr {
-  border:0;
-  background:#e5e5e5;
-  height:1px;
-  margin:0 0 20px;
-}
-
-footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-}
-
-@media print, screen and (max-width: 960px) {
-
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-
-  header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
-  }
-
-  header {
-    padding-right:320px;
-  }
-
-  section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
-  }
-
-  header a small {
-    display:inline;
-  }
-
-  header ul {
-    position:absolute;
-    right:50px;
-    top:52px;
-  }
-}
-
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
-  }
-
-  header {
-    padding:0;
-  }
-
-  header ul, header p.view {
-    position:static;
-  }
-
-  pre, code {
-    word-wrap:normal;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-  body {
-    padding:15px;
-  }
-
-  header ul {
-    display:none;
-  }
+@media print,
+screen and (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    header ul {
+        display: none;
+    }
 }
 
 @media print {
-  body {
-    padding:0.4in;
-    font-size:12pt;
-    color:#444;
-  }
+    body {
+        padding: 0.4in;
+        font-size: 12pt;
+        color: #444;
+    }
 }
-
-
-#wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  width: 940px;
-  background-color: white;
-  padding: 50px;
-}
-
+*/
+/*
 .ca-menu {
  list-style: none;
   padding: 0;
@@ -347,26 +1249,11 @@ clear: both;
 }
 
 
-  h1 { font-size: 2.5em; line-height: 1; }
-  h2 { font-size: 2em;   line-height: 1; }
-  h3 { font-size: 1.5em; line-height: 1; }
-  h4 { font-size: 1.2em; line-height: 1.25; }
-  h5 { font-size: 1em;   line-height: 1; font-weight: bold; }
-  h6 { font-size: 1em;   line-height: 1; font-weight: bold; }
 
-  h1, h2, h3, h4, h5, h6 { font-weight: normal; margin-top: 1.5em; margin-bottom: 1em; }
-  h1, h2 { margin-bottom: 0.75em; }
 
-.post p {
-  max-width: 580px;
-}
 
 ul.list, ol.list {
   padding-left: 3.333em;
   max-width: 580px;
-}
-
-.post h2 {
-  border-bottom: 1px solid #EDEDED;
 }
 */

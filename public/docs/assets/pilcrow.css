@@ -4,7 +4,7 @@
 .post h4,
 .post h5,
 .post h6 {
-  position: relative;
+    position: relative;
 }
 
 .post h1:hover .header-link:before,
@@ -13,22 +13,24 @@
 .post h4:hover .header-link:before,
 .post h5:hover .header-link:before,
 .post h6:hover .header-link:before {
-    content: "\00B6";/* pilcrow */
+    content: '\f05c';
+    /* pilcrow */
     color: #888;
     font-size: smaller;
+    font-weight: lighter;
+    font-family: "Octicons";
 }
 
 .post .header-link {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-  position: absolute;
-  top: 0;
-  left: -0.7em;
-  display: block;
-  padding-right: 1em;
+    top: 0;
+    left: -1em;
+    display: block;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    position: absolute;
+    padding-right: 1.2em;
 }
 
 .post h1:hover .header-link,
@@ -37,6 +39,6 @@
 .post h4:hover .header-link,
 .post h5:hover .header-link,
 .post h6:hover .header-link {
-  display: inline-block;
-  text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
 }

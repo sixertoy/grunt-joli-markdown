@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>{{title}}</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <style type="text/css">
-    @font-face {
-      font-family: 'Droid Sans';
-      font-style: normal;
-      font-weight: normal;
-      src: local('Droid Sans'), local('DroidSans'), url('DroidSans.woff') format('woff');
-    }
-    </style>
-
-    <link href='http://fonts.googleapis.com/css?family=Andika|Cantarell:400,700,400italic' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css' />
-    <script src="{{asset 'jquery-1.6.1.min.js'}}"></script>
-    <link type="text/css" rel="stylesheet" href="{{asset 'style.css'}}"/>
-    <link type="text/css" rel="stylesheet" href="{{asset 'assert.css'}}"/>
+    <!-- stylesheets -->
+    <link type="text/css" rel="stylesheet" href="{{asset 'style.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'pilcrow.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'hljs-github.min.css'}}" />
+    <!--
     <link type="text/css" rel="stylesheet" href="{{asset 'prettify.css'}}"/>
-    <link type="text/css" rel="stylesheet" href="{{asset 'pilcrow.css'}}"/>
-    <link type="text/css" rel="stylesheet" href="{{asset 'hljs-github.min.css'}}"/>
     <script type="text/javascript" src="{{asset 'prettify.js'}}"></script>
+    ---
+    <script src="{{asset 'jquery-1.6.1.min.js'}}"></script>
+    <link type="text/css" rel="stylesheet" href="{{asset 'assert.css'}}"/>
     <script type="text/javascript" src="{{asset 'runner.js'}}"></script>
+    -->
+</head>
 
-  </head>
 <body>
-<div id="wrapper">
-    <div id="header"></div>
-    <!-- Main -->
-    <div id="main">
-        <div id="container" class="clearfix size-100">
+    <div id="wrapper" class="clearfix">
+        <div id="header" class="size-100"></div>
+        <!-- Main -->
+        <div class="main">
             <div id="content" class="f-left size-70 post">{{~> content}}</div>
             <div id="sidebar" class="f-right size-25">{{~> toc}}</div>
         </div>
+        <div id="bottom_navi" class="size-100"></div>
+        <div id="footer" class="size-100"></div>
     </div>
-    <div id="footer"></div>
-</div>
-<!--
+    <!--
 <div id="bottom_navi">
     <a href="{{prev}}.html"> &lt; &lt; Previous Chapter</a> | <a href="{{next}}.html">Next Chapter &gt; &gt;</a>
 </div>
 -->
 </body>
+
 </html>
