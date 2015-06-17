@@ -22,7 +22,6 @@ grunt.config.init({
 ```
 
 ## options
-
 options.input (require)
 options.output (require)
 options.layout (optionnal)
