@@ -31,7 +31,10 @@
   "homepage": "https://github.com/sixertoy/grunt-joli-markdown",
   "dependencies": {
     "handlebars": "~2.0.0",
-    "markdown-styles": "^2.3.0"
+    "install": "^0.1.8",
+    "lodash": "^3.9.3",
+    "markdown-styles": "^2.3.0",
+    "npm": "^2.11.2"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
