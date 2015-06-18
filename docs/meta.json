@@ -1,8 +1,9 @@
 {
     "index": {
+        "base": "index.html",
         "title": "Grunt Joli Markdown",
         "menu": [
-            {"url": "/pages/hello_world","body": "Hello World"}
+            {"url": "pages/hello_world.html","body": "Hello World"}
         ],
         "sections": [
             {"url": "index.html#install","body": "Install"},
@@ -13,7 +14,8 @@
         ],
         "repoUrl": "https://gihub.com"
     },
-    "pages": {
+    "hello_world": {
+        "base": "../index.html",
         "repoUrl": "https://gihub.com"
     }
 }
