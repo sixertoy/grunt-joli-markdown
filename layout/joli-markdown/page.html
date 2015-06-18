@@ -22,19 +22,31 @@
 
 <body>
     <div id="wrapper" class="">
-        <div id="header" class="size-100">
+        <div id="header">
             <nav>
                 <a href="index.html">Home</a>
                 <a href="{{repoUrl}}">View on Github</a>
             </nav>
         </div>
         <!-- Main -->
-        <div id="main" class="size-100">
-            <div id="content" class="clearfix size-70 post">{{~> content}}</div>
-            <div id="sidebar" class="clearfix size-25">{{~> toc}}</div>
+        <div id="main">
+            <div class="inner grid-4-1">
+                <div id="content" class="clearfix post">{{~> content}}</div>
+                <div id="sidebar" class="clearfix">{{~> toc}}</div>
+            </div>
+            <div id="bottom_nav" class="clearfix">
+                <nav>
+                    <a href="">Next</a>
+                    <a href="">Previous</a>
+                </nav>
+            </div>
         </div>
-        <div id="bottom_navi" class="size-100"></div>
-        <div id="footer" class="size-100"></div>
+        <div id="footer">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="{{repoUrl}}">View on Github</a>
+            </nav>
+        </div>
     </div>
     <!--
 <div id="bottom_navi">

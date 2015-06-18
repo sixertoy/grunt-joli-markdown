@@ -4,22 +4,22 @@ links:
   - url: "/world"
     body: "World!"
 ---
-# sosocket
+# SoSocket
 [![Built with Grunt][grunt-img]](http://gruntjs.com/) [![MIT License][license-img]][license-url]
  
 > Live Stream
 
 
-## INSTALL
+## Install
 
 ```bash
 npm install -g grunt-cli istanbul jasmine-node coveralls markdown-styles
 npm install
 ```
 
-## USAGE
+## Usage
 
-## GRUNT
+## Grunt
 
 ### Plugins
 
@@ -83,7 +83,7 @@ grunt
 > - compile
 > - watch
 
-## CONTRIBUTING
+## Contributing
 
 ### Markdown
 - Grunt Tasks
