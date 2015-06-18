@@ -45,6 +45,11 @@ HTML Documentation skin<br/>
 **Default value**: `layout/markdown`<br/>
 **Possible values**: @see [markdown-styles](https://github.com/mixu/markdown-styles#screenshots-of-the-layouts)
 
+## Screenshot
+
+![Screenshot](https://github.com/sixertoy/grunt-joli-markdown/raw/master/screenshot.jpg)
+
+
 
 [grunt-img]: https://cdn.gruntjs.com/builtwith.png
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square

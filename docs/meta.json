@@ -8,7 +8,8 @@
             {"url": "index.html#install","body": "Install"},
             {"url": "index.html#usage","body": "Usage"},
             {"url": "index.html#toc","body": "TOC"},
-            {"url": "index.html#options","body": "Options"}
+            {"url": "index.html#options","body": "Options"},
+            {"url": "index.html#screenshot","body": "Screenshot"}
         ],
         "repoUrl": "https://gihub.com"
     },
