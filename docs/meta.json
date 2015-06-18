@@ -1,3 +1,11 @@
 {
-    "pages":[]
+    "index": {
+        "links": [
+            {"url": "/hello","body": "Hello"}
+        ],
+        "repoUrl": "https://gihub.com/sixertoy"
+    },
+    "pages": {
+        "repoUrl": "https://gihub.com/sixertoy"
+    }
 }

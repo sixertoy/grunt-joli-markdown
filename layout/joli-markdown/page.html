@@ -21,12 +21,17 @@
 </head>
 
 <body>
-    <div id="wrapper" class="clearfix">
-        <div id="header" class="size-100"></div>
+    <div id="wrapper" class="">
+        <div id="header" class="size-100">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="{{repoUrl}}">View on Github</a>
+            </nav>
+        </div>
         <!-- Main -->
-        <div class="main">
-            <div id="content" class="f-left size-70 post">{{~> content}}</div>
-            <div id="sidebar" class="f-right size-25">{{~> toc}}</div>
+        <div id="main" class="size-100">
+            <div id="content" class="clearfix size-70 post">{{~> content}}</div>
+            <div id="sidebar" class="clearfix size-25">{{~> toc}}</div>
         </div>
         <div id="bottom_navi" class="size-100"></div>
         <div id="footer" class="size-100"></div>

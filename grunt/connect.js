@@ -6,7 +6,7 @@ module.exports = {
             port: 9000,
             debug: true,
             base: {
-                path: 'public/docs',
+                path: '.',
                 options: {
                     maxAge: 300000,
                     index: 'index.html'

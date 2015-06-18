@@ -3,15 +3,16 @@
 @import "octicons/octicons.less"; // @see https://octicons.github.com/
 //
 @import url(//fonts.googleapis.com/css?family=PT+Sans);
-@import url(http://fonts.googleapis.com/css?family=Andika);
+@import url(//fonts.googleapis.com/css?family=Andika);
 @import url(//fonts.googleapis.com/css?family=Droid+Sans:400,700);
-@import url(http://fonts.googleapis.com/css?family=Cantarell:400,700,400italic);
+@import url(//fonts.googleapis.com/css?family=Cantarell:400,700,400italic);
 /* --------------------------------------------------------------------
 
  Variables
 
 */
 
+@blue: #39c;
 @border-color: #ededed;
 /* --------------------------------------------------------------------
 
@@ -19,11 +20,19 @@
 
 */
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
 body {
     color: #333;
     font-size: 17px;
     line-height: 1.1em;
-    font-family: 'Droid Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
+    background-color: @border-color;
+    font-family: 'Droid+Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
 }
 
 img {
@@ -47,13 +56,19 @@ h6 {
 
 h1 {
     color: #222;
+    margin-top: 0;
     font-size: 2.5em;
+    font-weight: bolder;
+    margin-bottom: 0.45em;
+    text-transform: uppercase;
+    font-family: 'PT Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
 }
 
 h2 {
     color: #393939;
     font-size: 2em;
     line-height: 1.4em;
+    margin-bottom: 0.75em;
     border-bottom: 1px solid @border-color;
 }
 
@@ -72,14 +87,10 @@ h6 {
     font-weight: bold;
 }
 
-h1,
-h2 {
-    margin-bottom: 0.75em;
-}
 /* links */
 
 a {
-    color: #39c;
+    color: @blue;
     font-weight: 400;
     text-decoration: none;
     small {
@@ -98,7 +109,8 @@ hr {
     color: @border-color;
     background-color: @border-color;
 }
-/* splitter */
+
+/* elements */
 
 p,
 ul,
@@ -110,6 +122,28 @@ blockquote,
 q {
     margin: 0 0 20px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    th {
+        color: #444;
+    }
+    th,
+    td {
+        text-align: left;
+        padding: 5px 10px;
+        border-bottom: 1px solid @border-color;
+    }
+}
+
+blockquote {
+    margin: 0;
+    font-style: italic;
+    padding: 0 0 0 20px;
+    border-left: 1px solid #e5e5e5;
+}
+
 /* --------------------------------------------------------------------
 
  Post
@@ -145,13 +179,99 @@ q {
         margin: 0 1.5em 1.5em 0;
     }
 }
+/* --------------------------------------------------------------------
 
-blockquote {
-    margin: 0;
-    font-style: italic;
-    padding: 0 0 0 20px;
-    border-left: 1px solid #e5e5e5;
+ Classes
+
+*/
+
+.size {
+    &-100 {
+        width: 100%;
+    }
+    &-70 {
+        width: 70%;
+    }
+    &-25 {
+        width: 25%;
+    }
 }
+/* --------------------------------------------------------------------
+
+ Gabarits
+
+*/
+
+#wrapper {
+    padding:0;
+    margin: 0 auto;
+    max-width: 960px;
+    box-sizing: border-box;
+}
+
+#main,
+#footer,
+#header {
+    padding: 0 3em;
+}
+
+#header{
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    background-color: @blue;
+    nav{
+        display: flex;
+        font-size: 0.65em;
+        padding: 0.3em 0.5em;
+        text-transform: uppercase;
+        justify-content: space-between;
+        font-family: 'PT Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
+        a{
+            color: #FFF;
+        }
+    }
+}
+
+#main {
+    display: flex;
+    padding-top:3em;
+    background-color: #FFF;
+    #content {
+        width: 67%;
+        margin-right: 13%;
+    }
+    #sidebar {
+        width: 20%;
+        line-height: 2em;
+        font-size: 0.75em;
+    }
+}
+
+#footer {
+}
+
+/* --------------------------------------------------------------------
+
+ Media Queries
+
+*/
+@media print,
+screen and (max-width: 960px) {
+}
+
+@media print,
+screen and (max-width: 720px) {
+}
+
+@media print,
+screen and (max-width: 480px) {
+}
+
+@media print {
+}
+
+
+
 /*
 
 .post p {
@@ -177,20 +297,6 @@ blockquote {
 }
 
 */
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    th {
-        color: #444;
-    }
-    th,
-    td {
-        text-align: left;
-        padding: 5px 10px;
-        border-bottom: 1px solid @border-color;
-    }
-}
 /*
 
 code,
@@ -265,50 +371,6 @@ header {
         }
     }
 }
-*/
-/* --------------------------------------------------------------------
-
- Classes
-
-*/
-
-.size {
-    &-100 {
-        width: 100%;
-    }
-    &-70 {
-        width: 65%;
-    }
-    &-25 {
-        width: 25%;
-    }
-}
-/* --------------------------------------------------------------------
-
- Gabarits
-
-*/
-
-#wrapper {
-    padding: 0;
-    height: 100%;
-    margin: 0 auto;
-    max-width: 960px;
-    background-color: #FFF;
-}
-
-#sidebar{
-    line-height: 2em;
-    text-align: right;
-    font-size: 0.75em;
-    margin-top: 7.5em;
-    margin-bottom: 0.75em;
-}
-
-/* --------------------------------------------------------------------
-
- Media Queries
-
 */
 /*
 @media print,

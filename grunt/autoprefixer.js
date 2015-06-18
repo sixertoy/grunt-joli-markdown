@@ -10,7 +10,7 @@ module.exports = {
         expand: true,
         flatten: false,
         src: ['*.css'],
-        cwd: './bin/markdown/assets/',
-        dest: './bin/markdown/assets/'
+        cwd: './layout/joli-markdown/assets/',
+        dest: './layout/joli-markdown/assets/'
     }
 };

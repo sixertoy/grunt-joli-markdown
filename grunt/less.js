@@ -6,7 +6,7 @@ module.exports = {
     },
     dev: {
         files: {
-            "./bin/markdown/assets/style.css": "./src/styles.less"
+            "./layout/joli-markdown/assets/style.css": "./src/styles.less"
         }
     }
 };
