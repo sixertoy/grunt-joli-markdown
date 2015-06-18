@@ -1516,14 +1516,17 @@ strong {
 #main #sidebar {
   position: fixed;
   font-size: 0.75em;
-  padding-right: 2.5em;
 }
 #main #sidebar h4 {
   color: #FFF;
   padding: 0.3em;
+  max-width: 190px;
   background: #3399cc;
   text-align: center;
   text-transform: uppercase;
+}
+#main #sidebar h4 a {
+  color: #FFF;
 }
 #main #sidebar ul li {
   line-height: 1.1em;
