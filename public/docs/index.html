@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>SoSocket</title>
+    <title>Grunt Joli Markdown</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -10,12 +10,12 @@
     <link type="text/css" rel="stylesheet" href="assets/style.css" />
     <link type="text/css" rel="stylesheet" href="assets/pilcrow.css" />
     <link type="text/css" rel="stylesheet" href="assets/hljs-github.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/assert.css"/>
     <!--
     <link type="text/css" rel="stylesheet" href="assets/prettify.css"/>
     <script type="text/javascript" src="assets/prettify.js"></script>
     ---
     <script src="assets/jquery-1.6.1.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="assets/assert.css"/>
     <script type="text/javascript" src="assets/runner.js"></script>
     -->
 </head>
@@ -24,155 +24,75 @@
     <div id="wrapper" class="">
         <div id="header">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="https://gihub.com/sixertoy">View on Github</a>
+                <a href="index.html"><span class="octicon octicon-home"></span></a>
+                <a href="https://gihub.com">View on Github&nbsp;&nbsp;&nbsp;<span class="octicon octicon-mark-github"></span></a>
             </nav>
         </div>
         <!-- Main -->
         <div id="main">
             <div class="inner grid-4-1">
-                <div id="content" class="clearfix post"><h1 id="sosocket"><a class="header-link" href="#sosocket"></a>SoSocket</h1>
-<p><a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt"></a> <a href="LICENSE-MIT"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="MIT License"></a></p>
+                <div id="content" class="clearfix post"><h1 id="grunt-joli-markdown-built-with-grunt-grunt-img-http-gruntjs-com-"><a class="header-link" href="#grunt-joli-markdown-built-with-grunt-grunt-img-http-gruntjs-com-"></a>Grunt Joli Markdown <a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt"></a></h1>
+<p><a href="LICENSE-MIT"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="MIT License"></a> <a href="https://npmjs.org/package/grunt-joli-markdown"><img src="http://img.shields.io/npm/v/grunt-joli-markdown.svg?style=flat-square" alt="NPM version"></a> <a href="https://npmjs.org/package/grunt-joli-markdown"><img src="http://img.shields.io/npm/dm/grunt-joli-markdown.svg?style=flat-square" alt="NPM downloads"></a></p>
 <blockquote>
-<p>Live Stream</p>
+<p>Markdown documentation generator based on mixu/markdown-styles</p>
 </blockquote>
 <h2 id="install"><a class="header-link" href="#install"></a>Install</h2>
-<pre class="hljs"><code>npm install -g grunt-cli istanbul jasmine-node coveralls markdown-styles
-npm install</code></pre><h2 id="usage"><a class="header-link" href="#usage"></a>Usage</h2>
-<h2 id="grunt"><a class="header-link" href="#grunt"></a>Grunt</h2>
-<h3 id="plugins"><a class="header-link" href="#plugins"></a>Plugins</h3>
-<ul class="list">
-<li><a href="https://github.com/gruntjs/grunt-contrib-watch">grunt-contrib-watch</a></li>
-<li><a href="https://github.com/vojtajina/grunt-bump">grunt-bump</a></li>
-<li><a href="https://github.com/gruntjs/grunt-contrib-connect">grunt-contrib-connect</a></li>
-<li><a href="https://github.com/treasonx/grunt-markdown">grunt-markdown</a></li>
-<li><a href="https://github.com/vkadam/grunt-jsbeautifier">grunt-jsbeautifier</a></li>
-</ul>
-<h3 id="watch"><a class="header-link" href="#watch"></a>Watch</h3>
-<h5 id="documentation"><a class="header-link" href="#documentation"></a>Documentation</h5>
-<pre class="hljs"><code>grunt watch:markdown</code></pre><blockquote>
-<ul class="list">
-<li>files: [&#39;./docs/src/<em>*/</em>.md&#39;]</li>
-<li>tasks: [&#39;markdown&#39;]</li>
-</ul>
-</blockquote>
-<h5 id="compilation-modules-commonjs"><a class="header-link" href="#compilation-modules-commonjs"></a>Compilation Modules CommonJS</h5>
-<pre class="hljs"><code>grunt watch:compile</code></pre><blockquote>
-<ul class="list">
-<li>files: [&#39;./src/<em>*/</em>.js&#39;]</li>
-<li>tasks: [&#39;wrap:commonjs&#39;, &#39;jsbeautifier&#39;, &#39;jshint&#39;]</li>
-</ul>
-</blockquote>
-<h5 id="tests-unitaires"><a class="header-link" href="#tests-unitaires"></a>Tests Unitaires</h5>
-<pre class="hljs"><code>grunt watch:jasmine</code></pre><blockquote>
-<ul class="list">
-<li>files: [&#39;./tests/specs/<strong>/*.spec.js&#39;, &#39;app/</strong>/*.js&#39;]</li>
-<li>tasks: [&#39;jasmine_node&#39;]</li>
-</ul>
-</blockquote>
-<h3 id="tasks"><a class="header-link" href="#tasks"></a>Tasks</h3>
-<h5 id="tests-unitaires"><a class="header-link" href="#tests-unitaires"></a>Tests Unitaires</h5>
-<pre class="hljs"><code>grunt tests</code></pre><blockquote>
-<ul class="list">
-<li>jasmine_node</li>
-</ul>
-</blockquote>
-<h5 id="compilation-des-modules-commonjs"><a class="header-link" href="#compilation-des-modules-commonjs"></a>Compilation des modules CommonJS</h5>
-<pre class="hljs"><code>grunt build</code></pre><blockquote>
-<ul class="list">
-<li>wrap</li>
-<li>jsbeautifier</li>
-</ul>
-</blockquote>
-<h5 id="tests-unitaires-et-compilation-des-modules-commonjs"><a class="header-link" href="#tests-unitaires-et-compilation-des-modules-commonjs"></a>Tests Unitaires et Compilation des modules CommonJS</h5>
-<pre class="hljs"><code>grunt compile</code></pre><blockquote>
-<ul class="list">
-<li>build</li>
-<li>jshint</li>
-<li>tests</li>
-</ul>
-</blockquote>
-<h5 id="grunt-default-"><a class="header-link" href="#grunt-default-"></a>Grunt (Default)</h5>
-<pre class="hljs"><code>grunt</code></pre><blockquote>
-<ul class="list">
-<li>compile</li>
-<li>watch</li>
-</ul>
-</blockquote>
-<h2 id="contributing"><a class="header-link" href="#contributing"></a>Contributing</h2>
-<h3 id="markdown"><a class="header-link" href="#markdown"></a>Markdown</h3>
-<ul class="list">
-<li>Grunt Tasks<pre class="hljs"><code>grunt watch:documentation
-grunt markdown</code></pre></li>
-<li><a href="https://guides.github.com/features/mastering-markdown/">Documentation</a></li>
-</ul>
-<h3 id="git-flow"><a class="header-link" href="#git-flow"></a>Git Flow</h3>
-<h4 id="install"><a class="header-link" href="#install"></a>Install</h4>
-<ul class="list">
-<li><a href="https://gist.github.com/sixertoy/ec40f5e0f726b25c8ec2">Manual</a></li>
-<li><a href="https://github.com/nvie/gitflow/wiki/Linux">Linux</a></li>
-<li><a href="https://github.com/nvie/gitflow/wiki/Windows">Windows</a></li>
-<li><a href="https://chocolatey.org/packages/git-flow-dependencies">Chocolatey (Windows)</a></li>
-</ul>
-<h4 id="documentation"><a class="header-link" href="#documentation"></a>Documentation</h4>
-<ul class="list">
-<li><a href="http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/">Using git-flow to automate your git branching workflow</a></li>
-<li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Tutorials</a></li>
-<li><a href="http://yakiloo.com/getting-started-git-flow/">Getting Started – Git-Flow</a></li>
-<li><a href="http://nicoespeon.com/fr/2013/08/quel-git-workflow-pour-mon-projet/">Quel git workflow pour mon projet ?</a></li>
-<li><a href="https://danielkummer.github.io/git-flow-cheatsheet/">git-flow cheatsheet</a></li>
-</ul>
-<h2 id="issues"><a class="header-link" href="#issues"></a>ISSUES</h2>
+<pre class="hljs"><code>npm install grunt-joli-markdown</code></pre><h2 id="usage"><a class="header-link" href="#usage"></a>Usage</h2>
+<pre class="hljs"><code>grunt.config.init({
+    joli_markdown:{
+        options: {
+            input: <span class="hljs-string">'./docs'</span>,
+            output: <span class="hljs-string">'./public/docs'</span>
+        }
+    }
+};</code></pre><h2 id="toc"><a class="header-link" href="#toc"></a>Toc</h2>
+<p>@see <a href="https://github.com/mixu/markdown-styles#metajson">markdown-styles</a></p>
+<h2 id="options"><a class="header-link" href="#options"></a>Options</h2>
+<h3 id="required"><a class="header-link" href="#required"></a>Required</h3>
+<h5 id="options-input"><a class="header-link" href="#options-input"></a>options.input</h5>
+<p>.md Files folder<br/>
+<strong>Type</strong>: <code>String</code></p>
+<h5 id="options-output"><a class="header-link" href="#options-output"></a>options.output</h5>
+<p>HTML Documentation output folder<br/>
+<strong>Type</strong>: <code>String</code></p>
+<h3 id="optionnal"><a class="header-link" href="#optionnal"></a>Optionnal</h3>
+<h5 id="options-layout"><a class="header-link" href="#options-layout"></a>options.layout</h5>
+<p>HTML Documentation skin<br/>
+<strong>Type</strong>: <code>String</code><br/>
+<strong>Default value</strong>: <code>layout/markdown</code><br/>
+<strong>Possible values</strong>: @see <a href="https://github.com/mixu/markdown-styles#screenshots-of-the-layouts">markdown-styles</a></p>
 </div>
-                <div id="sidebar" class="clearfix"><h5>Pages</h5>
-<ul class="nav nav-list">
-    <li><a href='/hello'>Hello</a></li>
-</ul>
-<hr />
+                <div id="sidebar" class="clearfix"><h4>Grunt Joli Markdown</h4>
 <h5>Sommaire</h5>
 <ul class="nav nav-list">
-    <li><a href="#sosocket">SoSocket</a></li>
-    <li><a href="#install">Install</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#grunt">Grunt</a></li>
-    <li><a href="#plugins">Plugins</a></li>
-    <li><a href="#watch">Watch</a></li>
-    <li><a href="#documentation">Documentation</a></li>
-    <li><a href="#compilation-modules-commonjs">Compilation Modules CommonJS</a></li>
-    <li><a href="#tests-unitaires">Tests Unitaires</a></li>
-    <li><a href="#tasks">Tasks</a></li>
-    <li><a href="#tests-unitaires">Tests Unitaires</a></li>
-    <li><a href="#compilation-des-modules-commonjs">Compilation des modules CommonJS</a></li>
-    <li><a href="#tests-unitaires-et-compilation-des-modules-commonjs">Tests Unitaires et Compilation des modules CommonJS</a></li>
-    <li><a href="#grunt-default-">Grunt (Default)</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#markdown">Markdown</a></li>
-    <li><a href="#git-flow">Git Flow</a></li>
-    <li><a href="#install">Install</a></li>
-    <li><a href="#documentation">Documentation</a></li>
-    <li><a href="#issues">ISSUES</a></li>
+    <li><a href='index.html#install'>Install</a></li>
+    <li><a href='index.html#usage'>Usage</a></li>
+    <li><a href='index.html#toc'>TOC</a></li>
+    <li><a href='index.html#options'>Options</a></li>
+</ul>
+<hr />
+<h5>Pages</h5>
+<ul class="nav nav-list">
+    <li><a href='/pages/hello_world'>Hello World</a></li>
 </ul>
 </div>
             </div>
+            <!--
             <div id="bottom_nav" class="clearfix">
                 <nav>
-                    <a href="">Next</a>
-                    <a href="">Previous</a>
+                    <a href=".html">Next</a>
+                    <a href=".html">Previous</a>
                 </nav>
             </div>
+            -->
         </div>
         <div id="footer">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="https://gihub.com/sixertoy">View on Github</a>
+                <a href="index.html"><span class="octicon octicon-home"></span></a>
+                <a href="https://gihub.com">View on Github&nbsp;&nbsp;&nbsp;<span class="octicon octicon-mark-github"></span></a>
             </nav>
         </div>
     </div>
-    <!--
-<div id="bottom_navi">
-    <a href=".html"> &lt; &lt; Previous Chapter</a> | <a href=".html">Next Chapter &gt; &gt;</a>
-</div>
--->
 </body>
 
 </html>

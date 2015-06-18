@@ -1,8 +1,8 @@
-# readme-styles [![Built with Grunt][grunt-img]](http://gruntjs.com/)
+# Grunt Joli Markdown [![Built with Grunt][grunt-img]](http://gruntjs.com/)
 
 [![MIT License][license-img]][license-url] [![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-url]
 
-* Markdown documentation generator based on mixu/markdown-styles
+> Markdown documentation generator based on mixu/markdown-styles
 
 ## Install
 ```bash
@@ -26,25 +26,24 @@ grunt.config.init({
 
 ## Options
 
-#### options.input (require)
-> .md Files folder
+### Required
 
+##### options.input
+.md Files folder<br/>
 **Type**: `String`
 
 
-#### options.output (require)
-> HTML Documentation output folder
-
+##### options.output
+HTML Documentation output folder<br/>
 **Type**: `String`
 
-#### options.layout (optionnal)
-> HTML Documentation skin
-**Type**: `String`
+### Optionnal
 
-**Default value**: `layout/markdown`
-
+##### options.layout
+HTML Documentation skin<br/>
+**Type**: `String`<br/>
+**Default value**: `layout/markdown`<br/>
 **Possible values**: @see [markdown-styles](https://github.com/mixu/markdown-styles#screenshots-of-the-layouts)
-
 
 
 [grunt-img]: https://cdn.gruntjs.com/builtwith.png

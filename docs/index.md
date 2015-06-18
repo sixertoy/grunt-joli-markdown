@@ -1,118 +1,61 @@
-# SoSocket
-[![Built with Grunt][grunt-img]](http://gruntjs.com/) [![MIT License][license-img]][license-url]
- 
-> Live Stream
+# Grunt Joli Markdown [![Built with Grunt][grunt-img]](http://gruntjs.com/)
 
+[![MIT License][license-img]][license-url] [![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-url]
+
+> Markdown documentation generator based on mixu/markdown-styles
 
 ## Install
-
 ```bash
-npm install -g grunt-cli istanbul jasmine-node coveralls markdown-styles
-npm install
+npm install grunt-joli-markdown
 ```
 
 ## Usage
-
-## Grunt
-
-### Plugins
-
-- [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
-- [grunt-bump](https://github.com/vojtajina/grunt-bump)
-- [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)
-- [grunt-markdown](https://github.com/treasonx/grunt-markdown)
-- [grunt-jsbeautifier](https://github.com/vkadam/grunt-jsbeautifier)
-
-### Watch
-
-##### Documentation
-```bash
-grunt watch:markdown
+```js
+grunt.config.init({
+    joli_markdown:{
+        options: {
+            input: './docs',
+            output: './public/docs'
+        }
+    }
+};
 ```
-> - files: ['./docs/src/**/*.md']
-> - tasks: ['markdown']
 
-##### Compilation Modules CommonJS
-```bash
-grunt watch:compile
-```
-> - files: ['./src/**/*.js']
-> - tasks: ['wrap:commonjs', 'jsbeautifier', 'jshint']
+## Toc
+@see [markdown-styles](https://github.com/mixu/markdown-styles#metajson)
 
-##### Tests Unitaires
-```bash
-grunt watch:jasmine
-```
-> - files: ['./tests/specs/**/*.spec.js', 'app/**/*.js']
-> - tasks: ['jasmine_node']
+## Options
 
-### Tasks
+### Required
 
-##### Tests Unitaires
-```bash
-grunt tests
-```
-> - jasmine_node
-
-##### Compilation des modules CommonJS
-```bash
-grunt build
-```
-> - wrap
-> - jsbeautifier
-
-##### Tests Unitaires et Compilation des modules CommonJS
-```bash
-grunt compile
-```
-> - build
-> - jshint
-> - tests
+##### options.input
+.md Files folder<br/>
+**Type**: `String`
 
 
-##### Grunt (Default)
-```bash
-grunt
-```
-> - compile
-> - watch
+##### options.output
+HTML Documentation output folder<br/>
+**Type**: `String`
 
-## Contributing
+### Optionnal
 
-### Markdown
-- Grunt Tasks
-```bash
-grunt watch:documentation
-grunt markdown
-```
-- [Documentation](https://guides.github.com/features/mastering-markdown/)
+##### options.layout
+HTML Documentation skin<br/>
+**Type**: `String`<br/>
+**Default value**: `layout/markdown`<br/>
+**Possible values**: @see [markdown-styles](https://github.com/mixu/markdown-styles#screenshots-of-the-layouts)
 
-### Git Flow
-
-#### Install
-
-- [Manual](https://gist.github.com/sixertoy/ec40f5e0f726b25c8ec2)
-- [Linux](https://github.com/nvie/gitflow/wiki/Linux)
-- [Windows](https://github.com/nvie/gitflow/wiki/Windows)
-- [Chocolatey (Windows)](https://chocolatey.org/packages/git-flow-dependencies)
-
-#### Documentation
-
-- [Using git-flow to automate your git branching workflow](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/)
-- [Tutorials](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
-- [Getting Started – Git-Flow](http://yakiloo.com/getting-started-git-flow/)
-- [Quel git workflow pour mon projet ?](http://nicoespeon.com/fr/2013/08/quel-git-workflow-pour-mon-projet/)
-- [git-flow cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
-
-## ISSUES
 
 [grunt-img]: https://cdn.gruntjs.com/builtwith.png
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: LICENSE-MIT
 
-[coverall-url]: https://coveralls.io/r/sixertoy/sosocket
-[coverall-img]: https://img.shields.io/coveralls/sixertoy/sosocket.svg?style=flat-square
+[coverall-url]: https://coveralls.io/r/sixertoy/grunt-joli-markdown
+[coverall-img]: https://img.shields.io/coveralls/sixertoy/grunt-joli-markdown.svg?style=flat-square
 
-[travis-url]: https://travis-ci.org/sixertoy/sosocket
-[travis-img]: http://img.shields.io/travis/sixertoy/sosocket.svg?style=flat-square
+[travis-url]: https://travis-ci.org/sixertoy/grunt-joli-markdown
+[travis-img]: http://img.shields.io/travis/sixertoy/grunt-joli-markdown.svg?style=flat-square
 
+[npm-url]: https://npmjs.org/package/grunt-joli-markdown
+[npm-version-img]: http://img.shields.io/npm/v/grunt-joli-markdown.svg?style=flat-square
+[npm-downloads-img]: http://img.shields.io/npm/dm/grunt-joli-markdown.svg?style=flat-square

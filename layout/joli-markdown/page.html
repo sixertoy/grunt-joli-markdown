@@ -10,12 +10,12 @@
     <link type="text/css" rel="stylesheet" href="{{asset 'style.css'}}" />
     <link type="text/css" rel="stylesheet" href="{{asset 'pilcrow.css'}}" />
     <link type="text/css" rel="stylesheet" href="{{asset 'hljs-github.min.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'assert.css'}}"/>
     <!--
     <link type="text/css" rel="stylesheet" href="{{asset 'prettify.css'}}"/>
     <script type="text/javascript" src="{{asset 'prettify.js'}}"></script>
     ---
     <script src="{{asset 'jquery-1.6.1.min.js'}}"></script>
-    <link type="text/css" rel="stylesheet" href="{{asset 'assert.css'}}"/>
     <script type="text/javascript" src="{{asset 'runner.js'}}"></script>
     -->
 </head>
@@ -24,8 +24,10 @@
     <div id="wrapper" class="">
         <div id="header">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="{{repoUrl}}">View on Github</a>
+                <a href="index.html"><span class="octicon octicon-home"></span></a>
+                {{#if repoUrl}}
+                <a href="{{repoUrl}}">View on Github&nbsp;&nbsp;&nbsp;<span class="octicon octicon-mark-github"></span></a>
+                {{/if}}
             </nav>
         </div>
         <!-- Main -->
@@ -34,25 +36,24 @@
                 <div id="content" class="clearfix post">{{~> content}}</div>
                 <div id="sidebar" class="clearfix">{{~> toc}}</div>
             </div>
+            <!--
             <div id="bottom_nav" class="clearfix">
                 <nav>
-                    <a href="">Next</a>
-                    <a href="">Previous</a>
+                    <a href="{{prev}}.html">Next</a>
+                    <a href="{{next}}.html">Previous</a>
                 </nav>
             </div>
+            -->
         </div>
         <div id="footer">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="{{repoUrl}}">View on Github</a>
+                <a href="index.html"><span class="octicon octicon-home"></span></a>
+                {{#if repoUrl}}
+                <a href="{{repoUrl}}">View on Github&nbsp;&nbsp;&nbsp;<span class="octicon octicon-mark-github"></span></a>
+                {{/if}}
             </nav>
         </div>
     </div>
-    <!--
-<div id="bottom_navi">
-    <a href="{{prev}}.html"> &lt; &lt; Previous Chapter</a> | <a href="{{next}}.html">Next Chapter &gt; &gt;</a>
-</div>
--->
 </body>
 
 </html>

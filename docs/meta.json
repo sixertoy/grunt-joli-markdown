@@ -1,11 +1,18 @@
 {
     "index": {
-        "links": [
-            {"url": "/hello","body": "Hello"}
+        "title": "Grunt Joli Markdown",
+        "menu": [
+            {"url": "/pages/hello_world","body": "Hello World"}
         ],
-        "repoUrl": "https://gihub.com/sixertoy"
+        "sections": [
+            {"url": "index.html#install","body": "Install"},
+            {"url": "index.html#usage","body": "Usage"},
+            {"url": "index.html#toc","body": "TOC"},
+            {"url": "index.html#options","body": "Options"}
+        ],
+        "repoUrl": "https://gihub.com"
     },
     "pages": {
-        "repoUrl": "https://gihub.com/sixertoy"
+        "repoUrl": "https://gihub.com"
     }
 }

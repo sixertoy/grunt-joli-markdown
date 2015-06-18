@@ -1,13 +1,28 @@
-<h5>Pages</h5>
-<ul class="nav nav-list">
-    {{#links}}
-    <li>{{{linkTo}}}</li>
-    {{/links}}
-</ul>
-<hr />
+{{#if title}}
+<h4>{{title}}</h4>
+{{/if}}
+{{#if sections}}
 <h5>Sommaire</h5>
+<ul class="nav nav-list">
+    {{#sections}}
+    <li>{{{linkTo}}}</li>
+    {{/sections}}
+</ul>
+{{/if}}
+{{#unless sections}}
+<h5>Headings</h5>
 <ul class="nav nav-list">
     {{#each headings}}
     <li><a href="#{{id}}">{{text}}</a></li>
     {{/each}}
 </ul>
+{{/unless}}
+<hr />
+{{#if menu}}
+<h5>Pages</h5>
+<ul class="nav nav-list">
+    {{#menu}}
+    <li>{{{linkTo}}}</li>
+    {{/menu}}
+</ul>
+{{/if}}

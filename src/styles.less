@@ -87,6 +87,7 @@ h4 {
     line-height: 1.25;
 }
 
+h4,
 h5,
 h6 {
     font-size: 1em;
@@ -147,6 +148,11 @@ blockquote {
     padding: 0 0 0 20px;
     border-left: 1px solid #e5e5e5;
 }
+
+strong {
+    color: #222;
+    font-weight: 700;
+}
 /* --------------------------------------------------------------------
 
  Post
@@ -154,6 +160,14 @@ blockquote {
 */
 
 .post {
+    p {
+        tt,
+        code {
+            padding: 0 0.2em;
+            background: ghostWhite;
+            border: 1px solid #DEDEDE;
+        }
+    }
     tt, pre, code {
         line-height: 1.5em;
         font-family: 'Droid Sans', 'lucida console', monospace;
@@ -181,7 +195,15 @@ blockquote {
         padding-left: 3.333em;
         margin: 0 1.5em 1.5em 0;
     }
+    small {
+        font-size: 11px;
+    }
+    dt {
+        color: #444;
+        font-weight: 700;
+    }
 }
+
 /* --------------------------------------------------------------------
 
  Classes
@@ -219,13 +241,14 @@ blockquote {
 
 #header {
     margin-bottom: 0.5em;
-    background-color: @blue;
+    // background-color: @blue;
     nav a {
-        color: #FFF;
+        color: #acacac;
     }
 }
 
 #main {
+    overflow: hidden;
     position: relative;
     padding-bottom: 5em;
     background-color: #FFF;
@@ -233,27 +256,37 @@ blockquote {
         padding-top: 3em;
     }
     #sidebar {
+        position: fixed;
         font-size: 0.75em;
+        padding-right: 2.5em;
+        h4{
+            color:#FFF;
+            padding: 0.3em;
+            background: @blue;
+            text-align: center;
+            text-transform: uppercase;
+        }
         ul {
             li {
                 line-height: 1.1em;
+                padding-left: 0.6em;
                 margin-bottom: 0.85em;
                 text-transform: capitalize;
             }
         }
     }
-    #bottom_nav{
+    #bottom_nav {
         margin-top: 10em;
         padding-top: 1em;
         justify-content: flex-end;
-        border-top:1px solid @border-color;
+        border-top: 1px solid @border-color;
         nav {
             display: flex;
             font-size: 0.8em;
             justify-content: flex-end;
-            a{
-                color:#FFF;
-                width:120px;
+            a {
+                color: #FFF;
+                width: 120px;
                 padding: 0.5em 2em;
                 text-align: center;
                 margin-left: 0.15em;
@@ -292,27 +325,10 @@ screen and (max-width: 480px) {}
 
 @media print {}
 /*
-
-.post p {
-  margin: 0 0 1.5em;
-  max-width: 580px;
-}
-
-.post ul, .post ol {
-  margin: 0 1.5em 1.5em 0;
-  padding-left: 3.333em;
-}
-
 .post pre, .post table {
   margin: -1em 0 1em 0;
   padding: .5em 1em;
   background: #F6F6F6 repeat 0 0;
-}
-
-.post p tt, .post p code {
-  background: ghostWhite;
-  border: 1px solid #DEDEDE;
-  padding: 0 0.2em;
 }
 
 */
@@ -326,28 +342,10 @@ pre {
 table {
 }
 
-
-
-dt {
-    color: #444;
-    font-weight: 700;
-}
-
-
-
-strong {
-    color: #222;
-    font-weight: 700;
-}
-
 section {
     width: 500px;
     float: right;
     padding-bottom: 50px;
-}
-
-small {
-    font-size: 11px;
 }
 
 header {
@@ -486,11 +484,8 @@ clear: both;
 }
 
 
-
-
-
 ul.list, ol.list {
-  padding-left: 3.333em;
   max-width: 580px;
+  padding-left: 3.333em;
 }
 */
