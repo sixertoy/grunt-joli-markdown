@@ -19,7 +19,11 @@
     },
     "keywords": [
     "grunt",
-    "markdown"
+    "markdown",
+    "markdown-styles",
+    "documentation",
+    "readme",
+    "toc"
   ],
     "author": {
         "name": "sixertoy",

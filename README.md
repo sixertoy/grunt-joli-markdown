@@ -21,10 +21,31 @@ grunt.config.init({
 };
 ```
 
-## options
-options.input (require)
-options.output (require)
-options.layout (optionnal)
+## Toc
+@see [markdown-styles](https://github.com/mixu/markdown-styles#metajson)
+
+## Options
+
+#### options.input (require)
+> .md Files folder
+
+**Type**: `String`
+
+
+#### options.output (require)
+> HTML Documentation output folder
+
+**Type**: `String`
+
+#### options.layout (optionnal)
+> HTML Documentation skin
+**Type**: `String`
+
+**Default value**: `layout/markdown`
+
+**Possible values**: @see [markdown-styles](https://github.com/mixu/markdown-styles#screenshots-of-the-layouts)
+
+
 
 [grunt-img]: https://cdn.gruntjs.com/builtwith.png
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square

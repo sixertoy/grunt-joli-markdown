@@ -1491,7 +1491,6 @@ blockquote {
   position: relative;
   padding-bottom: 5em;
   background-color: #FFF;
-  border-bottom: 1px solid #3399cc;
 }
 #main #content {
   padding-top: 3em;
@@ -1534,14 +1533,15 @@ blockquote {
   text-transform: lowercase;
 }
 #footer {
-  padding: 5em 3em;
   margin-top: 0.5em;
   margin-bottom: 1em;
   background-color: #272727;
+  padding: 0.8em 3em 5em 3em;
   border-bottom: 1px solid #FFF;
 }
 #footer nav a {
   color: #FFF;
+  font-size: 0.8em;
 }
 /* --------------------------------------------------------------------
 

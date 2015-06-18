@@ -1,9 +1,3 @@
-links:
-  - url: "/hello"
-    body: "Hello"
-  - url: "/world"
-    body: "World!"
----
 # SoSocket
 [![Built with Grunt][grunt-img]](http://gruntjs.com/) [![MIT License][license-img]][license-url]
  
