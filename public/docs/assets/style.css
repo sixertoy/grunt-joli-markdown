@@ -1439,6 +1439,9 @@ strong {
   padding: 0 0 0 20px;
   border-left: 4px solid #e5e5e5;
 }
+.post p {
+  margin-bottom: 1em;
+}
 .post p tt,
 .post p code {
   padding: 0 0.2em;
@@ -1511,6 +1514,19 @@ strong {
 .post ul li p,
 .post ol li p {
   margin-bottom: 0.4em;
+}
+.post ul pre,
+.post ol pre {
+  border: 0;
+  padding: 0.5em;
+  margin-top: 0.6em;
+  border-radius: 4px;
+  border: 1px solid #ededed;
+}
+.post ul pre code,
+.post ol pre code {
+  line-height: 2em;
+  font-style: italic;
 }
 .post small {
   font-size: 11px;

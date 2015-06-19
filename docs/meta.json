@@ -17,5 +17,10 @@
     "hello_world": {
         "base": "../index.html",
         "repoUrl": "https://gihub.com"
+    },
+    "installation": {
+        "title": "installation",
+        "base": "../index.html",
+        "repoUrl": "https://gihub.com"
     }
 }
