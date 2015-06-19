@@ -2,7 +2,8 @@
 
 [![MIT License][license-img]][license-url] [![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-url]
 
-> Markdown documentation generator based on mixu/markdown-styles
+> Markdown documentation generator based on [mixu/markdown-styles](https://github.com/mixu/markdown-styles)<br/>
+> [Github Markdown Cheatsheeet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Install
 ```bash

@@ -1370,6 +1370,9 @@ a small {
   font-size: 11px;
   margin-top: -0.6em;
 }
+a:hover {
+  text-decoration: underline;
+}
 /* splitter */
 hr {
   border: 0;
@@ -1404,12 +1407,6 @@ table td {
   padding: 5px 10px;
   border-bottom: 1px solid #ededed;
 }
-blockquote {
-  margin: 0;
-  font-style: italic;
-  padding: 0 0 0 20px;
-  border-left: 4px solid #e5e5e5;
-}
 strong {
   color: #222;
   font-weight: 700;
@@ -1422,9 +1419,7 @@ strong {
 .post {
   /*
     ul {
-        list-style-type: square;
         li{
-            margin-bottom: 0.6em;
         }
         ul {
             margin-top: 0em;
@@ -1436,6 +1431,13 @@ strong {
         }
     }
     */
+}
+.post blockquote {
+  margin: 0;
+  color: #8A8A8A;
+  font-style: normal;
+  padding: 0 0 0 20px;
+  border-left: 4px solid #e5e5e5;
 }
 .post p tt,
 .post p code {
@@ -1468,6 +1470,47 @@ strong {
 .post ul,
 .post ol {
   margin-left: 1em;
+  list-style-type: disc;
+}
+.post ul li,
+.post ol li,
+.post ul li p,
+.post ol li p {
+  margin-bottom: 0.6em;
+}
+.post ul li ol,
+.post ol li ol,
+.post ul li p ol,
+.post ol li p ol,
+.post ul li ul,
+.post ol li ul,
+.post ul li p ul,
+.post ol li p ul {
+  list-style-type: circle;
+}
+.post ul li ol ol,
+.post ol li ol ol,
+.post ul li p ol ol,
+.post ol li p ol ol,
+.post ul li ul ol,
+.post ol li ul ol,
+.post ul li p ul ol,
+.post ol li p ul ol,
+.post ul li ol ul,
+.post ol li ol ul,
+.post ul li p ol ul,
+.post ol li p ol ul,
+.post ul li ul ul,
+.post ol li ul ul,
+.post ul li p ul ul,
+.post ol li p ul ul {
+  font-size: 0.8em;
+  padding-top: 0.6em;
+  list-style-type: none;
+}
+.post ul li p,
+.post ol li p {
+  margin-bottom: 0.4em;
 }
 .post small {
   font-size: 11px;
@@ -1490,10 +1533,6 @@ strong {
   padding: 0;
   margin: 0 auto;
   max-width: 960px;
-  /*
-    border-left: 1px solid @border-color;
-    border-right: 1px solid @border-color;
-    */
 }
 #main,
 #footer,
