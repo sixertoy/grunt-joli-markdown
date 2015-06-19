@@ -1307,7 +1307,7 @@ body {
   color: #333;
   font-size: 17px;
   line-height: 1.1em;
-  background-color: #ededed;
+  background-color: #FFF;
   font-family: 'Droid+Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
 }
 img {
@@ -1379,6 +1379,7 @@ hr {
   background-color: #ededed;
 }
 /* elements */
+/*
 p,
 ul,
 ol,
@@ -1387,8 +1388,9 @@ pre,
 dl,
 blockquote,
 q {
-  margin: 0 0 20px;
+    margin: 0 0 20px;
 }
+*/
 table {
   width: 100%;
   border-collapse: collapse;
@@ -1406,7 +1408,7 @@ blockquote {
   margin: 0;
   font-style: italic;
   padding: 0 0 0 20px;
-  border-left: 1px solid #e5e5e5;
+  border-left: 4px solid #e5e5e5;
 }
 strong {
   color: #222;
@@ -1417,6 +1419,24 @@ strong {
  Post
 
 */
+.post {
+  /*
+    ul {
+        list-style-type: square;
+        li{
+            margin-bottom: 0.6em;
+        }
+        ul {
+            margin-top: 0em;
+            margin-bottom: 0;
+            list-style-type: circle;
+            ul {
+                list-style-type: circle;
+            }
+        }
+    }
+    */
+}
 .post p tt,
 .post p code {
   padding: 0 0.2em;
@@ -1438,20 +1458,16 @@ strong {
   border-style: solid;
   border-color: #ededed;
   border-width: 1px 1px 1px 6px;
-}
-.post pre ul,
-.post pre ol {
-  margin: 0;
-  padding: 0;
-}
-.post ul {
-  list-style-type: disc;
+  /*
+        ul, ol {
+            margin: 0;
+            padding: 0;
+        }
+        */
 }
 .post ul,
 .post ol {
-  line-height: 1.4em;
-  padding-left: 3.333em;
-  margin: 0 1.5em 1.5em 0;
+  margin-left: 1em;
 }
 .post small {
   font-size: 11px;
@@ -1474,6 +1490,10 @@ strong {
   padding: 0;
   margin: 0 auto;
   max-width: 960px;
+  /*
+    border-left: 1px solid @border-color;
+    border-right: 1px solid @border-color;
+    */
 }
 #main,
 #footer,
@@ -1511,7 +1531,7 @@ strong {
   background-color: #FFF;
 }
 #main #content {
-  padding-top: 3em;
+  padding-top: 1em;
 }
 #main #sidebar {
   position: fixed;
@@ -1565,9 +1585,8 @@ strong {
 }
 #footer {
   margin-top: 0.5em;
-  margin-bottom: 1em;
-  background-color: #272727;
-  padding: 0.8em 3em 5em 3em;
+  background-color: #e5e5e5;
+  padding: 0.8em 3em 0.8em 3em;
   border-bottom: 1px solid #FFF;
 }
 #footer nav a {

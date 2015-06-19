@@ -14,6 +14,7 @@
 
 @blue: #39c;
 @border-color: #ededed;
+@border-color2: #e5e5e5;
 /* --------------------------------------------------------------------
 
  HTML
@@ -35,7 +36,7 @@ body {
     color: #333;
     font-size: 17px;
     line-height: 1.1em;
-    background-color: @border-color;
+    background-color: #FFF;
     font-family: 'Droid+Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
 }
 
@@ -116,7 +117,7 @@ hr {
     background-color: @border-color;
 }
 /* elements */
-
+/*
 p,
 ul,
 ol,
@@ -127,6 +128,7 @@ blockquote,
 q {
     margin: 0 0 20px;
 }
+*/
 
 table {
     width: 100%;
@@ -146,7 +148,7 @@ blockquote {
     margin: 0;
     font-style: italic;
     padding: 0 0 0 20px;
-    border-left: 1px solid #e5e5e5;
+    border-left: 4px solid @border-color2;
 }
 
 strong {
@@ -161,14 +163,15 @@ strong {
 
 .post {
     p {
-        tt,
-        code {
+        tt, code {
             padding: 0 0.2em;
             background: ghostWhite;
             border: 1px solid #DEDEDE;
         }
     }
-    tt, pre, code {
+    tt,
+    pre,
+    code {
         line-height: 1.5em;
         font-family: 'Droid Sans', 'lucida console', monospace;
     }
@@ -181,20 +184,33 @@ strong {
         border-style: solid;
         border-color: @border-color;
         border-width: 1px 1px 1px 6px;
+        /*
         ul, ol {
             margin: 0;
             padding: 0;
         }
-    }
-    ul {
-        list-style-type: disc;
+        */
     }
     ul,
     ol {
-        line-height: 1.4em;
-        padding-left: 3.333em;
-        margin: 0 1.5em 1.5em 0;
+        margin-left: 1em;
     }
+    /*
+    ul {
+        list-style-type: square;
+        li{
+            margin-bottom: 0.6em;
+        }
+        ul {
+            margin-top: 0em;
+            margin-bottom: 0;
+            list-style-type: circle;
+            ul {
+                list-style-type: circle;
+            }
+        }
+    }
+    */
     small {
         font-size: 11px;
     }
@@ -203,7 +219,6 @@ strong {
         font-weight: 700;
     }
 }
-
 /* --------------------------------------------------------------------
 
  Classes
@@ -219,6 +234,10 @@ strong {
     padding: 0;
     margin: 0 auto;
     max-width: 960px;
+    /*
+    border-left: 1px solid @border-color;
+    border-right: 1px solid @border-color;
+    */
 }
 
 #main,
@@ -253,20 +272,20 @@ strong {
     padding-bottom: 5em;
     background-color: #FFF;
     #content {
-        padding-top: 3em;
+        padding-top: 1em;
     }
     #sidebar {
         position: fixed;
         font-size: 0.75em;
-        h4{
-            color:#FFF;
+        h4 {
+            color: #FFF;
             padding: 0.3em;
             max-width: 190px;
             background: @blue;
             text-align: center;
             text-transform: uppercase;
             a {
-                color:#FFF;
+                color: #FFF;
             }
         }
         ul {
@@ -302,9 +321,9 @@ strong {
 
 #footer {
     margin-top: 0.5em;
-    margin-bottom: 1em;
-    background-color: #272727;
-    padding: 0.8em 3em 5em 3em;
+    // margin-bottom: 1em;
+    background-color: @border-color2;
+    padding: 0.8em 3em 0.8em 3em;
     border-bottom: 1px solid #FFF;
     nav a {
         color: #FFF;
