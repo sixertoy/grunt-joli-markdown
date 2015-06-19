@@ -39,8 +39,7 @@
     "install": "^0.1.8",
     "lodash": "^3.9.3",
     "markdown-styles": "^2.3.0",
-    "npm": "^2.11.2",
-    "ws": "^0.7.2"
+    "npm": "^2.11.2"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
