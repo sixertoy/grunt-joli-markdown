@@ -193,15 +193,13 @@ strong {
 }
 .post p {
   margin-bottom: 1em;
+  line-height: 1.2em;
 }
 .post p tt,
 .post p code {
   padding: 0 0.2em;
   background: ghostWhite;
   border: 1px solid #DEDEDE;
-}
-.post > p {
-  line-height: 1.2em;
 }
 .post tt,
 .post pre,

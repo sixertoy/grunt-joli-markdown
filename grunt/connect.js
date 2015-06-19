@@ -14,13 +14,7 @@ module.exports = {
             livereload: 35730,
             hostname: 'localhost',
             onCreateServer: function () {
-                console.log('');
-                console.log('/************************************************/');
-                console.log('');
-                console.log('Livereload on port 35730');
-                console.log('');
-                console.log('/************************************************/');
-                console.log('');
+                console.log('Livereload listening on port: 35730');
             }
         }
     }
