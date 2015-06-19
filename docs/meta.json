@@ -14,13 +14,9 @@
         ],
         "repoUrl": "https://gihub.com"
     },
-    "hello_world": {
+    "*": {
         "base": "../index.html",
-        "repoUrl": "https://gihub.com"
-    },
-    "installation": {
-        "title": "Grunt Joli Markdown",
-        "base": "../index.html",
+        "Title": "Grunt Joli Markdown",
         "repoUrl": "https://gihub.com"
     }
 }
