@@ -2,21 +2,22 @@
 <html>
 
 <head>
-    <title>{{title}}</title>
+    <title>Documentation - {{title}}</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <!-- stylesheets -->
-    <link type="text/css" rel="stylesheet" href="{{asset 'style.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'reset.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'grid.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'styles.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'octicons.css'}}"/>
     <link type="text/css" rel="stylesheet" href="{{asset 'pilcrow.css'}}" />
     <link type="text/css" rel="stylesheet" href="{{asset 'hljs-github.min.css'}}" />
     <link type="text/css" rel="stylesheet" href="{{asset 'assert.css'}}"/>
+    <link type="text/css" rel="stylesheet" href="{{asset 'sunburst.css'}}"/>
     <!--
     <link type="text/css" rel="stylesheet" href="{{asset 'prettify.css'}}"/>
     <script type="text/javascript" src="{{asset 'prettify.js'}}"></script>
-    ---
-    <script src="{{asset 'jquery-1.6.1.min.js'}}"></script>
-    <script type="text/javascript" src="{{asset 'runner.js'}}"></script>
     -->
 </head>
 
@@ -37,14 +38,6 @@
                 <div id="content" class="clearfix post">{{~> content}}</div>
                 <div id="sidebar" class="clearfix">{{~> toc}}</div>
             </div>
-            <!--
-            <div id="bottom_nav" class="clearfix">
-                <nav>
-                    <a href="{{prev}}.html">Next</a>
-                    <a href="{{next}}.html">Previous</a>
-                </nav>
-            </div>
-            -->
         </div>
         <div id="footer">
             <nav>
