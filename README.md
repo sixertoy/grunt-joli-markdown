@@ -46,6 +46,12 @@ HTML Documentation skin<br/>
 **Default value**: `layout/markdown`<br/>
 **Possible values**: @see [markdown-styles](https://github.com/mixu/markdown-styles#screenshots-of-the-layouts)
 
+## Changelog
+- v0.1.8
+    - remove markdown-styles global install
+    - install sixertoy/markdown-styles
+    - add 'all' section in 'meta.jon' overrided by page's section
+
 ## Screenshot
 
 ![Screenshot](https://github.com/sixertoy/grunt-joli-markdown/raw/master/screenshot.jpg)

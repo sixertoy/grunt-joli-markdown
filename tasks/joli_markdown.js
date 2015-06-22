@@ -18,6 +18,8 @@
 
     var path = require('path'),
         lodash = require('lodash'),
+        render = require('markdown-styles').render,
+
         utils = {
             validString: function (grunt, value) {
                 return lodash.isString(value) && !lodash.isEmpty(value);
@@ -42,48 +44,35 @@
             //
             // variables
             var spOptions, options, defaultLayout,
-                isValidPages, isValidInput, isValidOuput, isValidLayout,
+                isValidInput, isValidOuput, isValidLayout,
                 done = this.async(),
                 base = path.dirname(module.filename),
-                stdiomode = grunt.option('debug') ? 'inherit' : 'ignore';
+                debug = (grunt.option('debug') === 1),
+                stdiomode = debug ? 'inherit' : 'ignore';
+
             //
             // construction du fichier de template par default
             defaultLayout = path.join(base, '../', 'layout/joli-markdown');
             options = this.options({
-                pages: [],
                 input: null,
                 output: null,
+                debug: debug,
                 cwd: process.cwd(),
-                layout: defaultLayout
+                layout: defaultLayout,
             });
             //
             // validation des options
-            isValidPages = utils.validArray(grunt, options.pages);
             isValidInput = utils.validString(grunt, options.input);
             isValidOuput = utils.validString(grunt, options.output);
             isValidLayout = utils.validString(grunt, options.layout);
             // verification
-            if (isValidInput && isValidOuput && isValidLayout && isValidPages) {
-                utils.normalizePath(options);
-                spOptions = {
-                    grunt: false,
-                    cmd: 'generate-md',
-                    opts: {
-                        stdio: stdiomode
-                    },
-                    args: ['--layout', options.layout, '--input', options.input, '--output', options.output]
-                };
-                // log
+            if (isValidInput && isValidOuput && isValidLayout) {
                 grunt.log.subhead('start compile documentation');
-                // call generate-md compile
-                grunt.util.spawn(spOptions, function (err, res) {
-                    if (err) {
-                        throw err;
-                    } else {
-                        grunt.log.ok('documentation compile success');
-                        done();
-                    }
+                render(options, function () {
+                    grunt.log.ok('documentation compile success');
+                    done();
                 });
+
             } else {
                 grunt.log.error('missing arguments');
                 done();

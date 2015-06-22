@@ -1,11 +1,10 @@
 {
   "name": "grunt-joli-markdown",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Markdown documentation generator based on mixu/markdown-styles",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf node_modules",
-    "postinstall": "npm install -g markdown-styles",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "echo \"Error: no start specified\" &&exit 1",
     "git-init": "git init && cd .git/hooks && ln -s ../../bin/git/commit-msg.js && mv commit-msg.js commit-msg && cd ../../"
@@ -35,11 +34,9 @@
   },
   "homepage": "https://github.com/sixertoy/grunt-joli-markdown",
   "dependencies": {
-    "handlebars": "~2.0.0",
-    "install": "^0.1.8",
+    "handlebars": "^3.0.3",
     "lodash": "^3.9.3",
-    "markdown-styles": "^2.3.0",
-    "npm": "^2.11.2"
+    "markdown-styles": "sixertoy/markdown-styles"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -51,7 +48,6 @@
     "load-grunt-config": "^0.17.1"
   },
   "peerDependencies": {
-    "grunt": "^0.4.5",
-    "markdown-styles": "^2.3.0"
+    "grunt": "^0.4.5"
   }
 }
