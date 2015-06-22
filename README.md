@@ -91,10 +91,10 @@ HTML Documentation skin<br/>
 ## Screenshot
 
 ### joli-markdown
-![joli-markdown](https://github.com/sixertoy/grunt-joli-markdown/raw/master/screenshot.jpg)
+![joli-markdown](https://github.com/sixertoy/grunt-joli-markdown/raw/master/joli-markdown.jpg)
 
 ### joli-markdown-light
-![joli-markdown-light](https://github.com/sixertoy/grunt-joli-markdown/raw/master/screenshot-light.jpg)
+![joli-markdown-light](https://github.com/sixertoy/grunt-joli-markdown/raw/master/joli-markdown-light.jpg)
 
 
 
