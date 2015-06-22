@@ -2,21 +2,22 @@
 <html>
 
 <head>
-    <title>Grunt Joli Markdown</title>
+    <title>Documentation - Grunt Joli Markdown [![Built with Grunt][grunt-img]](http://gruntjs.com/)</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <!-- stylesheets -->
-    <link type="text/css" rel="stylesheet" href="assets/style.css" />
+    <link type="text/css" rel="stylesheet" href="assets/reset.css" />
+    <link type="text/css" rel="stylesheet" href="assets/grid.css" />
+    <link type="text/css" rel="stylesheet" href="assets/styles.css" />
+    <link type="text/css" rel="stylesheet" href="assets/octicons.css"/>
     <link type="text/css" rel="stylesheet" href="assets/pilcrow.css" />
     <link type="text/css" rel="stylesheet" href="assets/hljs-github.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/assert.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/sunburst.css"/>
     <!--
     <link type="text/css" rel="stylesheet" href="assets/prettify.css"/>
     <script type="text/javascript" src="assets/prettify.js"></script>
-    ---
-    <script src="assets/jquery-1.6.1.min.js"></script>
-    <script type="text/javascript" src="assets/runner.js"></script>
     -->
 </head>
 
@@ -25,20 +26,20 @@
     <div id="wrapper" class="">
         <div id="header">
             <nav>
-                <a href="index.html"><span class="octicon octicon-home"></span></a>
+                <a href="../index.html"><span class="octicon octicon-home"></span></a>
                 <a href="https://gihub.com">View on Github&nbsp;&nbsp;&nbsp;<span class="octicon octicon-mark-github"></span></a>
             </nav>
         </div>
         <!-- Main -->
         <div id="main">
             <div class="inner grid-4-1">
-                <div id="content" class="clearfix post"><h1 id="grunt-joli-markdown-built-with-grunt-grunt-img-http-gruntjs-com-"><a class="header-link" href="#grunt-joli-markdown-built-with-grunt-grunt-img-http-gruntjs-com-"></a>Grunt Joli Markdown <a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt"></a></h1>
+                <div id="content" class="clearfix post"><h1 id="grunt-joli-markdown-built-with-grunt-grunt-img-http-gruntjs-com-">Grunt Joli Markdown <a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt"></a></h1>
 <p><a href="LICENSE-MIT"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="MIT License"></a> <a href="https://npmjs.org/package/grunt-joli-markdown"><img src="http://img.shields.io/npm/v/grunt-joli-markdown.svg?style=flat-square" alt="NPM version"></a> <a href="https://npmjs.org/package/grunt-joli-markdown"><img src="http://img.shields.io/npm/dm/grunt-joli-markdown.svg?style=flat-square" alt="NPM downloads"></a></p>
 <blockquote>
 <p>Markdown documentation generator based on mixu/markdown-styles</p>
 </blockquote>
-<h2 id="install"><a class="header-link" href="#install"></a>Install</h2>
-<pre class="hljs"><code>npm install grunt-joli-markdown</code></pre><h2 id="usage"><a class="header-link" href="#usage"></a>Usage</h2>
+<h2 id="install">Install</h2>
+<pre class="hljs"><code>npm install grunt-joli-markdown</code></pre><h2 id="usage">Usage</h2>
 <pre class="hljs"><code>grunt.config.init({
     joli_markdown:{
         options: {
@@ -46,49 +47,57 @@
             output: <span class="hljs-string">'./public/docs'</span>
         }
     }
-};</code></pre><h2 id="toc"><a class="header-link" href="#toc"></a>Toc</h2>
+};</code></pre><h2 id="toc">Toc</h2>
 <p>@see <a href="https://github.com/mixu/markdown-styles#metajson">markdown-styles</a></p>
-<h2 id="options"><a class="header-link" href="#options"></a>Options</h2>
-<h3 id="required"><a class="header-link" href="#required"></a>Required</h3>
-<h5 id="options-input"><a class="header-link" href="#options-input"></a>options.input</h5>
+<h2 id="options">Options</h2>
+<h3 id="required">Required</h3>
+<h5 id="options-input">options.input</h5>
 <p>.md Files folder<br/>
 <strong>Type</strong>: <code>String</code></p>
-<h5 id="options-output"><a class="header-link" href="#options-output"></a>options.output</h5>
+<h5 id="options-output">options.output</h5>
 <p>HTML Documentation output folder<br/>
 <strong>Type</strong>: <code>String</code></p>
-<h3 id="optionnal"><a class="header-link" href="#optionnal"></a>Optionnal</h3>
-<h5 id="options-layout"><a class="header-link" href="#options-layout"></a>options.layout</h5>
+<h3 id="optionnal">Optionnal</h3>
+<h5 id="options-layout">options.layout</h5>
 <p>HTML Documentation skin<br/>
 <strong>Type</strong>: <code>String</code><br/>
 <strong>Default value</strong>: <code>layout/markdown</code><br/>
 <strong>Possible values</strong>: @see <a href="https://github.com/mixu/markdown-styles#screenshots-of-the-layouts">markdown-styles</a></p>
-<h2 id="screenshot"><a class="header-link" href="#screenshot"></a>Screenshot</h2>
+<h2 id="screenshot">Screenshot</h2>
 <p class="img-container"><img src="https://github.com/sixertoy/grunt-joli-markdown/raw/master/screenshot.jpg" alt="Screenshot"></p>
 </div>
-                <div id="sidebar" class="clearfix"><h4><a href="#top">Grunt Joli Markdown&nbsp;&nbsp;&nbsp;<span class="octicon octicon-arrow-up"></span></a></h4>
-<h5>Sommaire</h5>
+                <div id="sidebar" class="clearfix"><h4><a href="#top">Grunt Joli Markdown [![Built with Grunt][grunt-img]](http://gruntjs.com/)&nbsp;&nbsp;&nbsp;<span class="octicon octicon-arrow-up"></span></a></h4>
+<h5>Headings</h5>
 <ul class="nav nav-list">
-    <li><a href='index.html#install'>Install</a></li>
-    <li><a href='index.html#usage'>Usage</a></li>
-    <li><a href='index.html#toc'>TOC</a></li>
-    <li><a href='index.html#options'>Options</a></li>
-    <li><a href='index.html#screenshot'>Screenshot</a></li>
+    <li><a href="#grunt-joli-markdown-built-with-grunt-grunt-img-http-gruntjs-com-">Grunt Joli Markdown [![Built with Grunt][grunt-img]](http://gruntjs.com/)</a></li>
+    <li><a href="#install">Install</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#toc">Toc</a></li>
+    <li><a href="#options">Options</a></li>
+    <li><a href="#required">Required</a></li>
+    <li><a href="#options-input">options.input</a></li>
+    <li><a href="#options-output">options.output</a></li>
+    <li><a href="#optionnal">Optionnal</a></li>
+    <li><a href="#options-layout">options.layout</a></li>
+    <li><a href="#screenshot">Screenshot</a></li>
 </ul>
 <hr />
 <h5>Pages</h5>
 <ul class="nav nav-list">
     <li><a href='pages/hello_world.html'>Hello World</a></li>
+    <li><a href='pages/yo.html'>Yo</a></li>
+    <li><a href='pages/Gzzzz.html'>Gzzzz</a></li>
 </ul>
+<!--
+<div id="bottom_nav" class="clearfix">
+    <nav>
+        <a href=".html">Next</a>
+        <a href=".html">Previous</a>
+    </nav>
+</div>
+-->
 </div>
             </div>
-            <!--
-            <div id="bottom_nav" class="clearfix">
-                <nav>
-                    <a href=".html">Next</a>
-                    <a href=".html">Previous</a>
-                </nav>
-            </div>
-            -->
         </div>
         <div id="footer">
             <nav>
