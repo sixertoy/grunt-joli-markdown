@@ -2,8 +2,9 @@
 
 [![MIT License][license-img]][license-url] [![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-url]
 
-> Markdown documentation generator based on mixu/markdown-styles
- 
+> Markdown documentation generator based on [mixu/markdown-styles](https://github.com/mixu/markdown-styles)<br/>
+> [Github Markdown Cheatsheeet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 ## Install
 ```bash
 npm install grunt-joli-markdown
@@ -15,10 +16,41 @@ grunt.config.init({
     joli_markdown:{
         options: {
             input: './docs',
-            output: './public/docs'
+            output: './public/docs',
+            layout: 'joli-markdown-light'
         }
     }
 };
+```
+
+### meta.json
+```json
+{
+    "index": {
+        "base": "index.html",
+        "title": "Grunt Joli Markdown",
+        "sections": [
+            {"url": "index.html#install","body": "Install"},
+            {"url": "index.html#usage","body": "Usage"},
+            {"url": "index.html#toc","body": "TOC"},
+            {"url": "index.html#options","body": "Options"},
+            {"url": "index.html#screenshot","body": "Screenshot"}
+        ],
+        "repoUrl": "https://gihub.com",
+        "menu": [
+            {"url": "pages/hello_world.html","body": "Hello World"}
+        ]
+    },
+    "all": {
+        "base": "../index.html",
+        "title": "Grunt Joli Markdown",
+        "repoUrl": "https://gihub.com",
+        "menu": [
+            {"url": "pages/hello_world.html","body": "Hello World"},
+            {"url": "pages/introduction.html","body": "Intoduction"}
+        ]
+    }
+}
 ```
 
 ## Toc
@@ -42,8 +74,19 @@ HTML Documentation output folder<br/>
 ##### options.layout
 HTML Documentation skin<br/>
 **Type**: `String`<br/>
-**Default value**: `layout/markdown`<br/>
-**Possible values**: @see [markdown-styles](https://github.com/mixu/markdown-styles#screenshots-of-the-layouts)
+**Default value**: `joli-markdown`<br/>
+**Possible values**:
+- `joli-markdown`
+- `joli-markdown-light`
+- @see [markdown-styles](https://github.com/mixu/markdown-styles#screenshots-of-the-layouts)
+
+## Changelog
+- v0.1.12
+    - options.input & options.ouput are relative to grunt task
+- v0.1.8
+    - remove markdown-styles global install
+    - install sixertoy/markdown-styles
+    - add 'all' section in 'meta.jon' overrided by page's section
 
 ## Screenshot
 
