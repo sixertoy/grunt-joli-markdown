@@ -2,9 +2,6 @@
     "index": {
         "base": "index.html",
         "title": "Grunt Joli Markdown",
-        "menu": [
-            {"url": "pages/hello_world.html","body": "Hello World"}
-        ],
         "sections": [
             {"url": "index.html#install","body": "Install"},
             {"url": "index.html#usage","body": "Usage"},
@@ -12,10 +9,19 @@
             {"url": "index.html#options","body": "Options"},
             {"url": "index.html#screenshot","body": "Screenshot"}
         ],
-        "repoUrl": "https://gihub.com"
+        "repoUrl": "https://gihub.com",
+        "menu": [
+            {"url": "pages/hello_world.html","body": "Hello World"}
+        ]
     },
-    "hello_world": {
+    "all": {
         "base": "../index.html",
-        "repoUrl": "https://gihub.com"
+        "Title": "Grunt Joli Markdown",
+        "repoUrl": "https://gihub.com",
+        "menu": [
+            {"url": "pages/hello_world.html","body": "Hello World"},
+            {"url": "pages/yo.html","body": "Yo"},
+            {"url": "pages/Gzzzz.html","body": "Gzzzz"}
+        ]
     }
 }
