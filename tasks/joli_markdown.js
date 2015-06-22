@@ -71,9 +71,11 @@
                 case 'joli-markdown':
                 case 'joli-markdown-light':
                     options.layout = path.join(base, '../layout', options.layout);
-                    console.log(options.layout);
                     break;
                 }
+
+                options.input = path.join(options.cwd, options.input);
+                options.output = path.join(options.cwd, options.output);
 
                 grunt.log.subhead('start compile documentation');
                 render(options, function () {
