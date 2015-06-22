@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documentation - {{title}}</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- stylesheets -->
+    <link type="text/css" rel="stylesheet" href="{{asset 'reset.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'grid.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'styles.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'octicons.css'}}"/>
+    <link type="text/css" rel="stylesheet" href="{{asset 'pilcrow.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'hljs-github.min.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'assert.css'}}"/>
+    <link type="text/css" rel="stylesheet" href="{{asset 'sunburst.css'}}"/>
+    <!--
+    <link type="text/css" rel="stylesheet" href="{{asset 'prettify.css'}}"/>
+    <script type="text/javascript" src="{{asset 'prettify.js'}}"></script>
+    -->
+</head>
+
+<body>
+    <a name="top"></a>
+    <div id="wrapper" class="">
+        <div id="header">
+            <nav>
+                <a href="{{base}}"><span class="octicon octicon-home"></span></a>
+                {{#if repoUrl}}
+                <a href="{{repoUrl}}">View on Github&nbsp;&nbsp;&nbsp;<span class="octicon octicon-mark-github"></span></a>
+                {{/if}}
+            </nav>
+        </div>
+        <!-- Main -->
+        <div id="main">
+            <div class="inner grid-4-1">
+                <div id="content" class="clearfix post">{{~> content}}</div>
+                <div id="sidebar" class="clearfix">{{~> toc}}</div>
+            </div>
+        </div>
+        <div id="footer">
+            <nav>
+                <a href="index.html"><span class="octicon octicon-home"></span></a>
+                {{#if repoUrl}}
+                <a href="{{repoUrl}}">View on Github&nbsp;&nbsp;&nbsp;<span class="octicon octicon-mark-github"></span></a>
+                {{/if}}
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>

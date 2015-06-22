@@ -1,22 +1,21 @@
 /*jslint indent: 4 */
-/*global module */
+/*global module, console */
 module.exports = {
     server: {
         options: {
-            port: 9000,
+            port: 9100,
             debug: true,
-            base: {
-                path: '.',
-                options: {
-                    maxAge: 300000,
-                    index: 'index.html'
-                }
+            base: ['./public/docs'],
+            open: {
+                appName: 'chrome'
             },
-            open: true,
             keepalive: true,
             protocol: 'http',
-            livereload: 35729,
-            hostname: 'localhost'
+            livereload: 35730,
+            hostname: 'localhost',
+            onCreateServer: function () {
+                console.log('Livereload listening on port: 35730');
+            }
         }
     }
 };

@@ -2,7 +2,8 @@
 
 [![MIT License][license-img]][license-url] [![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-url]
 
-> Markdown documentation generator based on mixu/markdown-styles
+> Markdown documentation generator based on [mixu/markdown-styles](https://github.com/mixu/markdown-styles)<br/>
+> [Github Markdown Cheatsheeet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Install
 ```bash
@@ -44,6 +45,12 @@ HTML Documentation skin<br/>
 **Type**: `String`<br/>
 **Default value**: `layout/markdown`<br/>
 **Possible values**: @see [markdown-styles](https://github.com/mixu/markdown-styles#screenshots-of-the-layouts)
+
+## Changelog
+- v0.1.8
+    - remove markdown-styles global install
+    - install sixertoy/markdown-styles
+    - add 'all' section in 'meta.jon' overrided by page's section
 
 ## Screenshot
 
