@@ -16,7 +16,7 @@
     },
     "all": {
         "base": "../index.html",
-        "Title": "Grunt Joli Markdown",
+        "title": "Grunt Joli Markdown",
         "repoUrl": "https://gihub.com",
         "menu": [
             {"url": "pages/hello_world.html","body": "Hello World"},

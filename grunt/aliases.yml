@@ -3,4 +3,5 @@ compile:
   - autoprefixer
 default:
   - compile
+  - joli_markdown
   - watch
