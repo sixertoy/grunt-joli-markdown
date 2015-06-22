@@ -3,6 +3,7 @@
 module.exports = {
     options: {
         input: './docs',
-        output: './public/docs'
+        output: './public/docs',
+        layout: 'joli-markdown-light'
     }
 };

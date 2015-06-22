@@ -3,7 +3,7 @@
 [![MIT License][license-img]][license-url] [![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-url]
 
 > Markdown documentation generator based on mixu/markdown-styles
-
+ 
 ## Install
 ```bash
 npm install grunt-joli-markdown

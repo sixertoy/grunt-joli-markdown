@@ -43,23 +43,22 @@
         grunt.registerTask('joli_markdown', 'The best Grunt plugin ever.', function () {
             //
             // variables
-            var spOptions, options, defaultLayout,
+            var layout, spOptions, options, defaultLayout,
                 isValidInput, isValidOuput, isValidLayout,
                 done = this.async(),
                 base = path.dirname(module.filename),
                 debug = (grunt.option('debug') === 1),
                 stdiomode = debug ? 'inherit' : 'ignore';
-
             //
             // construction du fichier de template par default
-            defaultLayout = path.join(base, '../', 'layout/joli-markdown');
             options = this.options({
                 input: null,
                 output: null,
                 debug: debug,
                 cwd: process.cwd(),
-                layout: defaultLayout,
+                layout: 'joli-markdown',
             });
+
             //
             // validation des options
             isValidInput = utils.validString(grunt, options.input);
@@ -67,6 +66,15 @@
             isValidLayout = utils.validString(grunt, options.layout);
             // verification
             if (isValidInput && isValidOuput && isValidLayout) {
+
+                switch (options.layout) {
+                case 'joli-markdown':
+                case 'joli-markdown-light':
+                    options.layout = path.join(base, '../layout', options.layout);
+                    console.log(options.layout);
+                    break;
+                }
+
                 grunt.log.subhead('start compile documentation');
                 render(options, function () {
                     grunt.log.ok('documentation compile success');
