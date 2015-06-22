@@ -2,22 +2,21 @@
 <html>
 
 <head>
-    <title>Documentation - Grunt Joli Markdown</title>
+    <title>Grunt Joli Markdown</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <!-- stylesheets -->
-    <link type="text/css" rel="stylesheet" href="assets/reset.css" />
-    <link type="text/css" rel="stylesheet" href="assets/grid.css" />
-    <link type="text/css" rel="stylesheet" href="assets/styles.css" />
-    <link type="text/css" rel="stylesheet" href="assets/octicons.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/style.css" />
     <link type="text/css" rel="stylesheet" href="assets/pilcrow.css" />
     <link type="text/css" rel="stylesheet" href="assets/hljs-github.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/assert.css"/>
-    <link type="text/css" rel="stylesheet" href="assets/sunburst.css"/>
     <!--
     <link type="text/css" rel="stylesheet" href="assets/prettify.css"/>
     <script type="text/javascript" src="assets/prettify.js"></script>
+    ---
+    <script src="assets/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="assets/runner.js"></script>
     -->
 </head>
 
@@ -36,7 +35,8 @@
                 <div id="content" class="clearfix post"><h1 id="grunt-joli-markdown-built-with-grunt-grunt-img-http-gruntjs-com-">Grunt Joli Markdown <a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt"></a></h1>
 <p><a href="LICENSE-MIT"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="MIT License"></a> <a href="https://npmjs.org/package/grunt-joli-markdown"><img src="http://img.shields.io/npm/v/grunt-joli-markdown.svg?style=flat-square" alt="NPM version"></a> <a href="https://npmjs.org/package/grunt-joli-markdown"><img src="http://img.shields.io/npm/dm/grunt-joli-markdown.svg?style=flat-square" alt="NPM downloads"></a></p>
 <blockquote>
-<p>Markdown documentation generator based on mixu/markdown-styles</p>
+<p>Markdown documentation generator based on <a href="https://github.com/mixu/markdown-styles">mixu/markdown-styles</a><br/>
+<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Github Markdown Cheatsheeet</a></p>
 </blockquote>
 <h2 id="install">Install</h2>
 <pre class="hljs"><code>npm install grunt-joli-markdown</code></pre><h2 id="usage">Usage</h2>
@@ -44,10 +44,37 @@
     joli_markdown:{
         options: {
             input: <span class="hljs-string">'./docs'</span>,
-            output: <span class="hljs-string">'./public/docs'</span>
+            output: <span class="hljs-string">'./public/docs'</span>,
+            layout: <span class="hljs-string">'joli-markdown-light'</span>
         }
     }
-};</code></pre><h2 id="toc">Toc</h2>
+};</code></pre><h3 id="meta-json">meta.json</h3>
+<pre class="hljs"><code>{
+    "<span class="hljs-attribute">index</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">base</span>": <span class="hljs-value"><span class="hljs-string">"index.html"</span></span>,
+        "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"Grunt Joli Markdown"</span></span>,
+        "<span class="hljs-attribute">sections</span>": <span class="hljs-value">[
+            {"<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"index.html#install"</span></span>,"<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"Install"</span></span>},
+            {"<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"index.html#usage"</span></span>,"<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"Usage"</span></span>},
+            {"<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"index.html#toc"</span></span>,"<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"TOC"</span></span>},
+            {"<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"index.html#options"</span></span>,"<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"Options"</span></span>},
+            {"<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"index.html#screenshot"</span></span>,"<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"Screenshot"</span></span>}
+        ]</span>,
+        "<span class="hljs-attribute">repoUrl</span>": <span class="hljs-value"><span class="hljs-string">"https://gihub.com"</span></span>,
+        "<span class="hljs-attribute">menu</span>": <span class="hljs-value">[
+            {"<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"pages/hello_world.html"</span></span>,"<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"Hello World"</span></span>}
+        ]
+    </span>}</span>,
+    "<span class="hljs-attribute">all</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">base</span>": <span class="hljs-value"><span class="hljs-string">"../index.html"</span></span>,
+        "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"Grunt Joli Markdown"</span></span>,
+        "<span class="hljs-attribute">repoUrl</span>": <span class="hljs-value"><span class="hljs-string">"https://gihub.com"</span></span>,
+        "<span class="hljs-attribute">menu</span>": <span class="hljs-value">[
+            {"<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"pages/hello_world.html"</span></span>,"<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"Hello World"</span></span>},
+            {"<span class="hljs-attribute">url</span>": <span class="hljs-value"><span class="hljs-string">"pages/introduction.html"</span></span>,"<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"Intoduction"</span></span>}
+        ]
+    </span>}
+</span>}</code></pre><h2 id="toc">Toc</h2>
 <p>@see <a href="https://github.com/mixu/markdown-styles#metajson">markdown-styles</a></p>
 <h2 id="options">Options</h2>
 <h3 id="required">Required</h3>
@@ -61,8 +88,26 @@
 <h5 id="options-layout">options.layout</h5>
 <p>HTML Documentation skin<br/>
 <strong>Type</strong>: <code>String</code><br/>
-<strong>Default value</strong>: <code>layout/markdown</code><br/>
-<strong>Possible values</strong>: @see <a href="https://github.com/mixu/markdown-styles#screenshots-of-the-layouts">markdown-styles</a></p>
+<strong>Default value</strong>: <code>joli-markdown</code><br/>
+<strong>Possible values</strong>:</p>
+<ul class="list">
+<li><code>joli-markdown</code></li>
+<li><code>joli-markdown-light</code></li>
+<li>@see <a href="https://github.com/mixu/markdown-styles#screenshots-of-the-layouts">markdown-styles</a></li>
+</ul>
+<h2 id="changelog">Changelog</h2>
+<ul class="list">
+<li>v0.1.12<ul class="list">
+<li>options.input &amp; options.ouput are relative to grunt task</li>
+</ul>
+</li>
+<li>v0.1.8<ul class="list">
+<li>remove markdown-styles global install</li>
+<li>install sixertoy/markdown-styles</li>
+<li>add &#39;all&#39; section in &#39;meta.jon&#39; overrided by page&#39;s section</li>
+</ul>
+</li>
+</ul>
 <h2 id="screenshot">Screenshot</h2>
 <p class="img-container"><img src="https://github.com/sixertoy/grunt-joli-markdown/raw/master/screenshot.jpg" alt="Screenshot"></p>
 </div>
@@ -80,16 +125,16 @@
 <ul class="nav nav-list">
     <li><a href='pages/hello_world.html'>Hello World</a></li>
 </ul>
-<!--
-<div id="bottom_nav" class="clearfix">
-    <nav>
-        <a href=".html">Next</a>
-        <a href=".html">Previous</a>
-    </nav>
-</div>
--->
 </div>
             </div>
+            <!--
+            <div id="bottom_nav" class="clearfix">
+                <nav>
+                    <a href=".html">Next</a>
+                    <a href=".html">Previous</a>
+                </nav>
+            </div>
+            -->
         </div>
         <div id="footer">
             <nav>
