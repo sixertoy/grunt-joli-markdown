@@ -1,6 +1,6 @@
 {
   "name": "grunt-joli-markdown",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Markdown documentation generator based on mixu/markdown-styles",
   "main": "index.js",
   "scripts": {
@@ -46,8 +46,5 @@
     "grunt-contrib-less": "^1.0.1",
     "grunt-contrib-watch": "^0.6.1",
     "load-grunt-config": "^0.17.1"
-  },
-  "peerDependencies": {
-    "grunt": "^0.4.5"
   }
 }
