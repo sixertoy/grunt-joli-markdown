@@ -1,6 +1,6 @@
 {
   "name": "grunt-joli-markdown",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Markdown documentation generator based on mixu/markdown-styles",
   "main": "index.js",
   "scripts": {
