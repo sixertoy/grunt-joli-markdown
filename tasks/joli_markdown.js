@@ -11,8 +11,8 @@
  * @see http://gruntjs.com/configuring-tasks#building-the-files-object-dynamically
  *
  */
-/*jslint indent: 4 */
-/*globals module, require, console, grunt, process */
+/*jslint indent: 4, nomen:true */
+/*globals module, require, console, grunt, process, __dirname */
 (function () {
     'use strict';
 
@@ -46,7 +46,7 @@
             var layout, spOptions, options, defaultLayout,
                 isValidInput, isValidOuput, isValidLayout,
                 done = this.async(),
-                base = path.dirname(module.filename),
+                cwd = process.cwd(),
                 debug = (grunt.option('debug') === 1),
                 stdiomode = debug ? 'inherit' : 'ignore';
             //
@@ -55,8 +55,8 @@
                 input: null,
                 output: null,
                 debug: debug,
-                cwd: process.cwd(),
-                layout: 'joli-markdown',
+                'header-link': true,
+                layout: 'joli-markdown'
             });
 
             //
@@ -66,16 +66,13 @@
             isValidLayout = utils.validString(grunt, options.layout);
             // verification
             if (isValidInput && isValidOuput && isValidLayout) {
-
-                switch (options.layout) {
-                case 'joli-markdown':
-                case 'joli-markdown-light':
-                    options.layout = path.join(base, '../layout', options.layout);
-                    break;
+                if (options.layout === 'joli-markdown' || options.layout === 'joli-markdown-light') {
+                    options.layout = path.join(__dirname, '..', 'layout', options.layout);
+                    options.layout = path.relative(cwd, options.layout);
                 }
-
-                options.input = path.join(options.cwd, options.input);
-                options.output = path.join(options.cwd, options.output);
+                options.layout = path.normalize(options.layout);
+                options.input = path.join(cwd, options.input);
+                options.output = path.join(cwd, options.output);
 
                 grunt.log.subhead('start compile documentation');
                 render(options, function () {
