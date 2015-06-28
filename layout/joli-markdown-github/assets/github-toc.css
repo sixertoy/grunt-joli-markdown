@@ -1,0 +1,129 @@
+@import url(//fonts.googleapis.com/css?family=PT+Sans);
+@import url(//fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+.markdown-container{
+    display: flex;
+    margin-left:-30px;
+    padding-bottom:80px;
+    justify-content: space-between;
+}
+
+/* ----------------------------------------------------
+ *
+ * Body
+ *
+ */
+.markdown-body{
+    width:70%;
+    font-family: 'Droid+Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
+}
+.markdown-body pre,
+.markdown-body code{
+    font-family: 'PT Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
+}
+
+.markdown-body a{
+    color:#39c;
+}
+.markdown-body a:hover{
+    text-decoration: none;
+}
+
+.markdown-body h2{
+    color:#272727;
+    border-width: 4px;
+}
+.markdown-body h3{
+    color:#9f9f9f;
+    border-bottom: 1px solid #eee;
+}
+.markdown-body h4{
+    color:#bababa;
+}
+.markdown-body h5,
+.markdown-body h6{
+    color:#9f9f9f;
+}
+
+/* ----------------------------------------------------
+ *
+ * Header
+ *
+ */
+.markdown-body.document-header{
+    width:100%;
+    font-size: 0.75em;
+    padding:0 0 40px 0;
+    text-transform: uppercase;
+    font-family: 'PT Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
+}
+.markdown-body.document-header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ----------------------------------------------------
+ *
+ * Sidebar
+ *
+ */
+.markdown-body.sidebar{
+    width:18.7%;
+    position: fixed;
+    font-size:0.75em;
+    box-sizing: border-box;
+}
+
+.markdown-body.sidebar .inner{
+    padding-left:19%;
+}
+
+.markdown-body.sidebar ul{
+    padding-left: 0.80em;
+    list-style-type: none;
+}
+
+.markdown-body.sidebar hr{
+    height: 1px;
+    margin: 7px 0;
+}
+
+.markdown-body.sidebar h4{
+    margin-top:0;
+    padding: 5px 8px;
+    margin-bottom: 10;
+    font-size: 1.05em;
+    background-color:#39C;
+}
+
+.markdown-body.sidebar h4 a{
+    color:#FFF;
+    font-family: 'Droid+Sans', Helvetica, 'Helvetica Neuve', Arial, Tahoma, sans-serif;
+}
+
+.markdown-body.sidebar h5{
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+}
+
+.markdown-body.sidebar h5,
+.markdown-body.sidebar h6{
+    color:#272727;
+}
+
+/* ----------------------------------------------------
+ *
+ * Pilcrow
+ *
+ */
+.markdown-body h1:hover .header-link:before,
+.markdown-body h2:hover .header-link:before,
+.markdown-body h3:hover .header-link:before,
+.markdown-body h4:hover .header-link:before,
+.markdown-body h5:hover .header-link:before,
+.markdown-body h6:hover .header-link:before {
+    content: "\f05c";/* pilcrow */
+    color: #888;
+    font-size: smaller;
+    font-family: octicons;
+}

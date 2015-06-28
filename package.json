@@ -1,6 +1,6 @@
 {
     "name": "grunt-joli-markdown",
-    "version": "0.1.17",
+    "version": "0.1.18",
     "description": "Markdown documentation generator based on mixu/markdown-styles",
     "main": "index.js",
     "scripts": {
@@ -16,14 +16,7 @@
         "type": "git",
         "url": "https://github.com/sixertoy/grunt-joli-markdown"
     },
-    "keywords": [
-    "grunt",
-    "markdown",
-    "markdown-styles",
-    "documentation",
-    "readme",
-    "toc"
-  ],
+    "keywords": ["grunt","markdown","markdown-styles","documentation","readme","toc","gruntplugin"],
     "author": {
         "name": "sixertoy",
         "email": "sixertoy.github@gmail.com"
